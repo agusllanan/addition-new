@@ -6,6 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
+    "animate.css": "^4.1.1",
+    "animate.css-react": "^1.1.0",
+    "axios": "^0.23.0",
+    "heroicons": "^1.0.4",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

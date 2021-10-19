@@ -1,7 +1,9 @@
+import Layout from "../components/Layout";
 import Head from 'next/head'
 
 export default function Home() {
   return (
+    <Layout>
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Create Next App</title>
@@ -78,5 +80,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </Layout>
   )
 }
