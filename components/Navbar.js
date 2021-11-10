@@ -7,7 +7,7 @@ import Dropdown from "./Dropdown";
 const Navbar = ({ toggle }) => {
   return (
     <Menu
-      className="flex flex-nowrap items-center justify-between bg-white relative shadow-sm h-20 mx-6"
+      className="flex space-x-3 items-center justify-between bg-white relative shadow-sm h-20 "
       as="div"
     >
       {({ open }) => (
@@ -310,7 +310,7 @@ const Navbar = ({ toggle }) => {
               </a>
             </Link>
             <Link href="/contactanos">
-              <button className="inline-flex text-sm items-center text-white bg-brink-pink-500 border-0 py-2 px-4 focus:outline-none hover:bg-brink-pink-600 rounded-xl mt-4 md:mt-0 font-mont animate-pulse">
+              <button className="btn">
                 CONTÁCTANOS
                 <svg
                   fill="none"

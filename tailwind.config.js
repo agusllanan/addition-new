@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
       fontFamily: {
         mont: ["Montserrat", "sans-serif"],
       },
@@ -21,10 +24,19 @@ module.exports = {
           900: "#73273a",
         },
       },
+      backgroundImage: {
+        'hero-background': "url('https://pixabay.com/es/photos/cygnet-aves-animal-lago-cisne-6482420/')",
+      },
+      backdropFilter: {
+        'none': 'none',
+        'blur': 'blur(20px)',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 };
