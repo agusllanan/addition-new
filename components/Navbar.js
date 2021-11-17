@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import Dropdown from "./Dropdown";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -33,7 +32,6 @@ const Navbar = ({ toggle }) => {
               />
             </svg>
           </div>
-          <Dropdown />
           <div className="pr-8 lg:flex hidden lg:items-center">
             <Link href="/">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
@@ -113,8 +111,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/climaLaboral/auditorias-nom-035">
@@ -128,8 +126,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/climaLaboral/consultorias-capacitaciones">
@@ -145,8 +143,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group font-bold flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/diseno-automatizacion-procesos">
@@ -160,8 +158,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/diseno-automatizacion-procesos/nivel1-desing-deploy">
@@ -175,8 +173,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/diseno-automatizacion-procesos/nivel2-create-do">
@@ -190,8 +188,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/diseno-automatizacion-procesos/nivel3-project-management">
@@ -207,8 +205,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group font-bold justify-center flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma">SIX SIGMA</Link>
@@ -220,8 +218,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/basic-quick-smart-trainings">
@@ -235,8 +233,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/nivel1-lean-6sigma-white-belt">
@@ -250,8 +248,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/nivel2-lean-6sigma-yellow-belt">
@@ -265,8 +263,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/nivel3-lean-6sigma-green-belt">
@@ -280,8 +278,8 @@ const Navbar = ({ toggle }) => {
                         <button
                           className={`${
                             active
-                            ? "bg-brink-pink-200 text-brink-pink-600"
-                            : "text-brink-pink-600"
+                              ? "bg-brink-pink-200 text-brink-pink-600"
+                              : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/nivel4-lean-6sigma-black-belt">

@@ -5,10 +5,11 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       fontFamily: {
         mont: ["Montserrat", "sans-serif"],
+        comm: ["Commissioner", "sans-serif"],
       },
       colors: {
         "brink-pink": {
@@ -25,18 +26,17 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'hero-background': "url('https://pixabay.com/es/photos/cygnet-aves-animal-lago-cisne-6482420/')",
+        "hero-background":
+          "url('https://pixabay.com/es/photos/cygnet-aves-animal-lago-cisne-6482420/')",
       },
       backdropFilter: {
-        'none': 'none',
-        'blur': 'blur(20px)',
+        none: "none",
+        blur: "blur(20px)",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-filters'),
-  ],
+  plugins: [require("tailwindcss-filters")],
 };
