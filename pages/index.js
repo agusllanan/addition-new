@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-// import Servicios from "../components/Servicios";
+import Servicios from "../components/Servicios";
 
 export default function Home() {
   return (
@@ -90,9 +90,9 @@ export default function Home() {
             ></iframe>
           </div>
         </section>
-        <section className="bg-[#EA5076] items-center p-8 flex flex-col justify-center font-comm">
-          <h3 className="text-white text-2xl">Nuestros Servicios</h3>
-          {/* <Servicios /> */}
+        <section className="bg-[#EA5076] items-center py-12 flex flex-col justify-center font-comm">
+          <h3 className="text-white text-3xl mb-4">Nuestros Servicios</h3>
+          <Servicios />
         </section>
       </main>
     </Layout>
