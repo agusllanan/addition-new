@@ -6,7 +6,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 const Navbar = ({ toggle }) => {
   return (
     <Menu
-      className="flex space-x-3 items-center justify-between bg-white relative shadow-sm h-20 "
+      className="flex space-x-3 items-center justify-between bg-white relative shadow-sm h-20 font-comm"
       as="div"
     >
       {({ open }) => (
