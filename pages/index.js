@@ -52,10 +52,10 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
-            <h3 className="text-3xl text-[#EA5076] font-regular mb-4 self-start">
+            <h2 className="text-3xl text-[#EA5076] font-regular mb-4 self-start">
               {" "}
               Bienvenido/a a <span className="font-bold">Addition RH</span>
-            </h3>
+            </h2>
             <p className="text-base text-gray-600">
               Sabemos que las personas que conforman tu empresa son cruciales
               para su crecimiento. <br /> <br /> Estamos comprometidos a
