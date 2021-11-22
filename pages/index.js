@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-[#EA5076] items-center py-12 flex flex-col justify-center font-comm">
-          <h3 className="text-white text-3xl mb-4">Nuestros Servicios</h3>
+          <h2 className="text-white text-3xl mb-4">Nuestros Servicios</h2>
           <Servicios />
         </section>
       </main>
