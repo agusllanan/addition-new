@@ -1,13 +1,14 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Servicios from "../components/Servicios";
 
 export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Addition</title>
+        <title>Addition - Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -17,7 +18,7 @@ export default function Home() {
             backgroundImage: `url(/img/portada/imagen-portada.png)`,
           }}
         >
-          <section className="glass font-comm">
+          <section className="glass font-comm h-[450px] m-auto md:ml-[50px]">
             <h2 className="text-gray-700 pt-8 pb-6 text-center text-3xl font-medium">
               ¿Tu organización asume las normas sobre diversidad e inclusión?{" "}
             </h2>
@@ -42,12 +43,12 @@ export default function Home() {
           </section>
         </div>
         <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm">
-          <div className="w-full md:w-1/2 overflow-hidden ">
+          <div className="w-full md:w-1/2 overflow-hidden self-end">
             <Image
               src="/img/elipse.png"
               width={400}
               height={400}
-              className="relative origin-bottom-left left-[300px] top-[400px]"
+              className="absolute origin-bottom-left left-[300px] top-[400px]"
               alt=""
             />
           </div>
@@ -94,7 +95,143 @@ export default function Home() {
           <h2 className="text-white text-3xl mb-4">Nuestros Servicios</h2>
           <Servicios />
         </section>
+        {/* Seccion de metodologia */}
+        <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm px-10 ">
+          <div className="w-full md:w-1/2 flex flex-col items-start justify-center">
+            <h2 className="text-3xl text-[#9825A6] font-regular mb-4 self-start">
+              {" "}
+              Conoce nuestra <br />
+              <span>metodología</span>
+            </h2>
+            <p className="text-base text-gray-600">
+              Sabemos que las personas que conforman tu empresa son cruciales
+              para su crecimiento. <br /> <br /> Estamos comprometidos a
+              ayudarte con la{" "}
+              <span className="font-bold">
+                motivación, retención y desarrollo de tu equipo de trabajo
+              </span>{" "}
+              basado en una{" "}
+              <span className="font-bold">cultura de respeto</span> y de{" "}
+              <span className="font-bold">diversidad e inclusión</span> para el
+              crecimiento de tu empresa. <br />
+              <br /> Addition ocupa el lugar 13 a nivel nacional dentro de las
+              50 mejores empresas de consultoría en{" "}
+              <span className="font-bold">Recursos Humanos,</span> de acuerdo
+              con el ranking de la Revista Consultoría y el lugar No.40 de las
+              mejores empresas de{" "}
+              <span className="font-bold">
+                consultoría Administrativa y de Gestión.
+              </span>{" "}
+              <br /> <br />
+              ¡Conoce más de nosotros!
+            </p>
+            <button className="text-white rounded-3xl py-2 px-6 bg-[#9825A6] hover:bg-[#ce84d8] my-2">
+              Conoce más
+            </button>
+          </div>
+          <div className="w-full md:w-1/2 overflow-hidden flex justify-center">
+            <Image
+              src="/img/elipse.png"
+              width={400}
+              height={400}
+              className="relative origin-bottom-left left-[300px] top-[400px]"
+              alt=""
+            />
+          </div>
+        </section>
+        <div className="w-full bg-gray-200 font-comm">
+          <div className="flex flex-wrap text-center font-jost divide-x-2 divide-white">
+            <div className="py-10 w-1/3">
+              <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
+                +12
+              </h3>
+              <p className="leading-relaxed font-regular text-base text-black">
+                AÑOS DE EXPERIENCIA
+              </p>
+            </div>
+            <div className="py-10 w-1/3">
+              <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
+                +100
+              </h3>
+              <p className="leading-relaxed font-regular text-base text-black">
+                Clientes Satisfechos
+              </p>
+            </div>
+            <div className="py-10 w-1/3">
+              <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
+                +80
+              </h3>
+              <p className="leading-relaxed font-regular text-base text-black">
+                Empresas impactadas
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Seccion Frase */}
+        <div
+          className="bg-no-repeat bg-cover relative h-[600px] flex flex-row"
+          style={{
+            backgroundImage: `url(/img/portada/laboral.jpg)`,
+            objectPosition: "bottom",
+          }}
+        >
+          <section className="glass font-comm h-auto">
+            <h2 className="text-gray-700 pt-8 pb-6 text-center text-3xl font-medium h-auto">
+              "¿Tu organización asume las normas sobre diversidad e inclusión?"
+            </h2>
+          </section>
+        </div>
+        <section className="flex flex-row h-[700px]"> 
+          <div className="bg-[#69C6FA] w-1/4">
+            <div className="h-[605px] mt-10 w-[500px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-xl ml-40 content-center">
+            <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+            <div className="p-6">
+              <Image
+                src="/img/servicios/diversidad-inclusion.jpg"
+                width={500}
+                height={400}
+                className="object-cover rounded-xl object-center"
+                alt="Aqui va el alt de la imagen"
+              />
+              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+                Diversidad e inclusion
+              </h3>
+              <p className="leading-relaxed mb-3 text-justify">
+                Con la asesoría de nuestro Coach, podrás elegir entre uno o
+                varios temas de nuestro catálogo de servicios ajustándose a un
+                tiempo y presupuesto objetivo
+              </p>
+              <div className="flex items-center flex-wrap">
+                <Link href="#">
+                  <button className="inline-flex text-[#69C6FA] font-bold border-2 border-[#69C6FA]  py-2 px-6 focus:outline-none hover:bg-[#83d2ff] hover:text-white rounded text-lg transition ease-in duration-250">
+                    Leer el artículo
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div className="w-3/4 flex flex-col items-end px-10 font-comm">
+            <h3 className="w-1/2 text-3xl text-[#69C6FA] py-10">
+              Alianzas y casos de éxito
+            </h3>
+            <p className="w-1/2 py-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nostrum? Illum laboriosam ipsam recusandae? Ipsum excepturi error vero voluptas ab, saepe odio aliquid velit quisquam at quae. Quisquam, soluta aut.
+            </p>
+              <Image
+              src="/img/portada/logos.png"
+              width={500}
+              height={250}
+              className="relative pl-10 py-10"
+              alt=""
+            />
+            <button className="text-white rounded-3xl py-2 px-6 my-2 bg-[#69C6FA]">
+              Conoce más
+            </button>
+          </div>
+        </section>
       </main>
     </Layout>
   );
-}
+} 
