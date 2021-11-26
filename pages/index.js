@@ -43,11 +43,11 @@ export default function Home() {
           </section>
         </div>
         <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm">
-          <div className="w-full md:w-1/2 overflow-hidden self-end">
+          <div className="w-full md:w-1/2 overflow-hidden self-end -m-10">
             <Image
-              src="/img/elipse.png"
-              width={400}
-              height={400}
+              src="/img/home/lihuba-home.png"
+              width={600}
+              height={600}
               className="absolute origin-bottom-left left-[300px] top-[400px]"
               alt=""
             />
@@ -103,7 +103,7 @@ export default function Home() {
               Conoce nuestra <br />
               <span>metodología</span>
             </h2>
-            <p className="text-base text-gray-600">
+            <p className="text-base text-gray-600 w-4/5">
               Sabemos que las personas que conforman tu empresa son cruciales
               para su crecimiento. <br /> <br /> Estamos comprometidos a
               ayudarte con la{" "}
@@ -131,9 +131,9 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 overflow-hidden flex justify-center">
             <Image
-              src="/img/elipse.png"
-              width={400}
-              height={400}
+              src="/img/home/formula-addition.png"
+              width={700}
+              height={700}
               className="relative origin-bottom-left left-[300px] top-[400px]"
               alt=""
             />
@@ -181,9 +181,9 @@ export default function Home() {
             </h2>
           </section>
         </div>
-        <section className="flex flex-row h-[700px]"> 
+        <section className="flex flex-row h-[800px]"> 
           <div className="bg-[#69C6FA] w-1/4">
-            <div className="h-[605px] mt-10 w-[500px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-xl ml-40 content-center">
+            <div className="h-[605px] w-[500px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-xl ml-40 mt-24">
             <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -202,17 +202,17 @@ export default function Home() {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                <Link href="#">
-                  <button className="inline-flex text-[#69C6FA] font-bold border-2 border-[#69C6FA]  py-2 px-6 focus:outline-none hover:bg-[#83d2ff] hover:text-white rounded text-lg transition ease-in duration-250">
+                  <Link href="#">
+                    <button className="inline-flex text-[#69C6FA] font-bold border-2 border-[#69C6FA]  py-2 px-6 focus:outline-none hover:bg-[#83d2ff] hover:text-white rounded text-lg transition ease-in duration-250">
                     Leer el artículo
-                  </button>
-                </Link>
+                    </button>
+                 </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
           </div>
-          <div className="w-3/4 flex flex-col items-end px-10 font-comm">
+          <div className="w-3/4 flex flex-col items-end px-10 font-comm justify-center">
             <h3 className="w-1/2 text-3xl text-[#69C6FA] py-10">
               Alianzas y casos de éxito
             </h3>
@@ -229,6 +229,74 @@ export default function Home() {
             <button className="text-white rounded-3xl py-2 px-6 my-2 bg-[#69C6FA]">
               Conoce más
             </button>
+          </div>
+        </section>
+        <section className="flex flex-col h-[400px] bg-[#EA5076]">
+          <div className="py-10 pl-28 w-5/6">
+            <h3 className="font-comm text-white font-light text-3xl">
+              Lo que nuestros clientes <br/> opinan de nosotros
+            </h3>
+          </div>
+          <div className="flex flex-row space-x-10 w-5/6 mx-auto">
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+                <p className="">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                </p>
+                <p className="text-base text-[#69A3A2]">
+                  Name, and company 
+                </p>
+            </div>
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+                <p className="">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                </p>
+                <p className="text-base text-[#69A3A2]">
+                  Name, and company 
+                </p>
+            </div>
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+                <p className="">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                </p>
+                <p className="text-base text-[#69A3A2]">
+                  Name, and company 
+                </p>
+            </div>
+          </div>
+        </section>
+        <section className="w-full bg-white flex flex-row space-x-10 h-[400px] justify-center items-center px-10 font-comm">
+          <div className="w-2/3">
+            <h3 className="text-2xl font-comm">
+              Somos una empresa con calidad comprobada
+            </h3>
+          </div>
+          <div className="flex flex-col space-y-4">
+          <div className="flex justify-center">
+            <Image
+              src="/img/home/certificado-igualdad.png"
+              width={200}
+              height={200}
+              className="object-cover rounded-xl object-center"
+              alt="Aqui va el alt de la imagen"
+            />
+          </div>
+          <p className="text-sm">
+            Somos la primer empresa de consultoría en Recursos Humanos en obtener la certificación en la Norma Mexicana de Igualdad Laboral y No Discriminación.
+          </p>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <div className="flex justify-center">
+               <Image
+              src="/img/home/certificado-rh.png"
+              width={200}
+              height={200}
+              className="object-cover rounded-xl object-center"
+              alt="Aqui va el alt de la imagen"
+            />
+            </div>
+            <p className="text-sm">
+              Ocupamos el lugar número 15 a nivel Nacional dentro de las 50 mejores empresas en Recursos Humanos, y el 39 de las mejores empresas de consultoría administrativa de gestión.
+            </p>
           </div>
         </section>
       </main>
