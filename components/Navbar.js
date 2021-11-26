@@ -6,7 +6,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 const Navbar = ({ toggle }) => {
   return (
     <Menu
-      className="flex space-x-3 items-center justify-between bg-white relative shadow-sm h-20 font-comm"
+      className="flex fixed space-x-3 items-center justify-between bg-white shadow-md h-20 font-comm w-full z-50"
       as="div"
     >
       {({ open }) => (
@@ -297,11 +297,11 @@ const Navbar = ({ toggle }) => {
                 ALIANZAS
               </a>
             </Link>
-            <Link href="/aprendizaje">
+            {/* <Link href="/aprendizaje">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
                 BOLSA DE TRABAJO
               </a>
-            </Link>
+            </Link> */}
             <Link href="/blog">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
                 BLOG
