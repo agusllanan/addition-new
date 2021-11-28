@@ -292,7 +292,7 @@ const Navbar = ({ toggle }) => {
                 </div>
               </Menu.Items>
             </Transition>
-            <Link href="/aprendizaje">
+            <Link href="/alianzas">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
                 ALIANZAS
               </a>

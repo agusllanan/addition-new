@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div
+        <div 
           className="bg-no-repeat bg-cover relative h-screen flex items-center"
           style={{
             backgroundImage: `url(/img/portada/imagen-portada.png)`,
@@ -187,7 +187,7 @@ export default function Home() {
             <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
-                src="/img/servicios/diversidad-inclusion.jpg"
+                src="/img/home/alianzas-casos-de-exito.jpg"
                 width={500}
                 height={400}
                 className="object-cover rounded-xl object-center"

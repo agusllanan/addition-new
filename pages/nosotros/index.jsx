@@ -200,13 +200,12 @@ const nosotros = () => {
               </p></div>
             </div>
           </div>
-          <div className="w-2/3 flex flex-col justify-center items-end space-y-10 pr-16">
+          <div className="w-2/3 flex flex-col justify-center items-end space-y-10 pr-">
           <h3 className="w-2/3 text-3xl font-comm text-[#69C6FA]">
             Nuestros valores
           </h3>
           <p className="w-2/3 text-justify">
             Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-
             Peel the 2 cherries, if it’s even possible to peel a cherry, discard the stalks and place them neatly next to the other fruits
           </p>
           </div>
