@@ -3,7 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-
+import moment from "moment";
+ 
 
 const index = () => {
   return (
@@ -21,7 +22,7 @@ const index = () => {
         >
           <div className="glass font-comm h-auto my-24 py-8 m-auto md:ml-[50px]">
             <h2 className="text-gray-700 py-12 text-center text-3xl font-medium">
-            Diversidad e inclusión
+            Servicios en diversidad e inclusión
             </h2>
             <p className="text-gray-700 text-lg mx-10 text-justify">
               Más de 20 años de experiencia haciendo trascender a empresas
@@ -34,7 +35,7 @@ const index = () => {
           </div>
         </section>
         <section className="bg-gradient-to-tl from-[#5900B1] to-[#FD1593] items-center py-12 flex flex-col justify-center font-comm">
-          <h2 className="text-white text-3xl mb-4">Nuestros Servicios</h2>
+          <h2 className="text-white text-3xl mb-4">Servicios en diversidad e inclusión</h2>
           <section className="flex flex-row space-x-12 mt-5">
         <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
@@ -54,9 +55,9 @@ const index = () => {
                 varios temas de nuestro catálogo de servicios ajustándose a un
                 tiempo y presupuesto objetivo
               </p>
-              <div className="flex items-center flex-wrap">
+              <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button className="btn-servicios transition ease-in duration-250">
                     Conoce más
                   </button>
                 </Link>
@@ -83,9 +84,9 @@ const index = () => {
                 varios temas de nuestro catálogo de servicios ajustándose a un
                 tiempo y presupuesto objetivo
               </p>
-              <div className="flex items-center flex-wrap">
+              <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button className="btn-servicios transition ease-in duration-250">
                     Conoce más
                   </button>
                 </Link>
@@ -112,9 +113,9 @@ const index = () => {
                 varios temas de nuestro catálogo de servicios ajustándose a un
                 tiempo y presupuesto objetivo
               </p>
-              <div className="flex items-center flex-wrap">
+              <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button className="btn-servicios transition ease-in duration-250">
                     Conoce más
                   </button>
                 </Link>
@@ -129,21 +130,21 @@ const index = () => {
         <div
           className="bg-no-repeat bg-cover relative h-[400px] flex items-center"
           style={{
-            backgroundImage: `url(/img/nosotros/lihuba-nosotros.png)`,
+            backgroundImage: `url(/img/servicios/servicios-section.png)`,
           }}
       />
       </div>
-      <div className="bg-[#EA5076] flex flex-col justify-center space-y-7 items-center w-1/2 font-comm">
-        <h2 className="text-white text-2xl w-4/5">
-          Acerca de Lihuba Vences
+      <div className="bg-white flex flex-col justify-center space-y-7 items-center w-1/2 font-comm">
+        <h2 className="text-[#A036AD] text-2xl w-4/5">
+          Servicio resaltado
         </h2>
-        <p className="text-white w-4/5">
+        <p className="text-black w-4/5">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
           Amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
         </p>
         <div className="w-4/5">
-        <button className="btn bg-white hover:bg-gray-200 text-[#EA5076] py-3">
-          Ponte en contacto conmigo
+        <button className="btn-servicios btn-servicios transition ease-in duration-250">
+          call to action
         </button>
         </div>
       </div>
@@ -176,6 +177,117 @@ const index = () => {
             </div>
           </div>
         </div>
+        <section className="flex h-[500]">
+          <div className="flex w-1/2 justify-center items-center bg-[#A036AD] h-[540px]">
+            <h3 className="text-white text-4xl">
+              Por qué pensar en <br /><span className="font-bold">
+                Diversidad e inclusión?
+              </span>
+            </h3>
+          </div>
+          <div className="w-1/2">
+          <div className="w-full border-2 bg-white border-gray-200 border-opacity-60 h-500">
+            <div className="p-6">
+              <Image
+                src="/img/home/alianzas-casos-de-exito.jpg"
+                width={700}
+                height={350}
+                className="object-cover object-bottom w-3/4"
+                alt="Aqui va el alt de la imagen"
+              />
+              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+                Addition y Proanalytics unen esfuerzos por la Diversidad e Inclusión
+              </h3>
+              <p className="leading-relaxed mb-3 text-justify">
+                Con la asesoría de nuestro Coach, podrás elegir entre uno o
+                varios temas de nuestro catálogo de servicios ajustándose a un
+                tiempo y presupuesto objetivo
+              </p>
+                  <div className="space-x-4 flex justify-center">
+                  <ChevronLeftIcon 
+                    className="w-8 h-8 text-brink-pink-600 hover:text-violet-500 cursor-pointer "
+                  />
+                  <ChevronRightIcon
+                   className="w-8 h-8 text-brink-pink-600 hover:text-violet-500 cursor-pointer "
+                   />
+                  </div>
+              </div>
+          </div>
+          </div>
+        </section>
+        <section className="bg-[#EDEDED] flex flex-col">
+          <div className="px-10 py-10 font-comm text-xl">
+            <h3>
+              Conoce mas de este y otros temas en nuestro blog
+            </h3>
+          </div>
+          <div className="px-10">
+            <div className="grid grid-cols-4 grid-rows-1 gap-4 gap-x-4 ">
+              <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
+              <div>
+                <Image
+                src="/img/alianzas/exito-1.png"
+                width={400}
+                height={200}
+                className="object-cover object-bottom rounded-lg"
+                alt="Aqui va el alt de la imagen"
+                />
+              </div>
+              <h3 className="w-full">Entrada de blog 1</h3>
+              <p className="w-full text-sm">
+                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
+              </p>
+            </div>
+            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
+              <div>
+                <Image
+                src="/img/alianzas/exito-1.png"
+                width={400}
+                height={200}
+                className="object-cover object-bottom rounded-lg"
+                alt="Aqui va el alt de la imagen"
+                />
+              </div>
+              <h3 className="w-full">Entrada de Blog 2</h3>
+              <p className="w-full text-sm">
+                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
+              </p>
+            </div>
+            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
+              <div>
+                <Image
+                src="/img/alianzas/exito-1.png"
+                width={400}
+                height={200}
+                className="object-cover object-bottom rounded-lg"
+                alt="Aqui va el alt de la imagen"
+                />
+              </div>
+              <h3 className="w-full">Entrada de blog 3</h3>
+              <p className="w-full text-sm">
+                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
+              </p>
+            </div>
+            <div className="bg-white h-auto w-full shadow-lg flex flex-col  items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
+              <div>
+                <Image
+                src="/img/alianzas/exito-1.png"
+                width={400}
+                height={200}
+                className="object-cover object-bottom rounded-lg"
+                alt="Aqui va el alt de la imagen"
+                />
+              </div>
+              <h3 className="w-full">Entrada de blog 4</h3>
+              <div className="justify-end w-full">
+                <p className="w-full text-sm text-[#69A3A2] pt-24">
+                  current date
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   )
