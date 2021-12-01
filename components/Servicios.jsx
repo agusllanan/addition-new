@@ -1,7 +1,20 @@
 import Image from "next/image";
+import Swal from 'sweetalert';
 import Link from "next/link";
 
+
 const Servicios = () => {
+
+const callServices = () => {
+  Swal({
+    title: "Servicios",
+    text: "preuba preuab",
+    icon: "success",
+    button: "Salir"
+  });
+}
+
+
   return (
     <>
       {/* // ------------ Primer Servicio ------------ */}
@@ -25,11 +38,12 @@ const Servicios = () => {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                <Link href="#">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button 
+                  className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250"
+                  onClick={() => callServices()}
+                  >
                     Conoce más
                   </button>
-                </Link>
               </div>
             </div>
           </div>

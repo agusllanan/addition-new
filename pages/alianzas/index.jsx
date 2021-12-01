@@ -3,12 +3,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
+import Nav from "../../components/Breadcrumbs";
 
 const alianzas = () => {
   return (
     <Layout>
       <Head>
-        <title>Addition - Nosotros</title>
+        <title>Addition - Alianzas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div>
@@ -19,8 +20,9 @@ const alianzas = () => {
           }}
       />
     </div>
+    <Nav/>
     <section className="flex flex-col w-full h-[800px]">
-      <div className="bg-white space-x-6 flex px-10 h-1/2 relative">
+      <div className="bg-white space-x-6 flex px-10 h-1/2 relative first-letter:">
         <div className="absolute top-12 left-40">
         <h3 className="text-[#EA5076] text-3xl font-comm w-full font-normal">Alianzas estratégicas</h3>
         </div>
@@ -91,7 +93,7 @@ const alianzas = () => {
       <div className="">
         <h3 className="text-brink-pink-500 text-3xl py-8"> Casos de Exito </h3>
       </div>
-      <div className="grid grid-cols-4 grid-rows-2 gap-4 gap-x-4 ">
+      <div className="grid grid-cols-3 grid-rows-2 gap-4 gap-x-4 ">
             <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
               <div>
                 <Image
@@ -171,36 +173,6 @@ const alianzas = () => {
               <div>
                 <Image
                 src="/img/alianzas/exito-6.png"
-                width={400}
-                height={200}
-                className="object-cover object-bottom rounded-lg"
-                alt="Aqui va el alt de la imagen"
-                />
-              </div>
-              <h3 className="w-full">Titulo caso de exito</h3>
-              <p className="w-full text-sm">
-                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-              </p>
-            </div>
-            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3">
-              <div>
-                <Image
-                src="/img/alianzas/exito-7.png"
-                width={400}
-                height={200}
-                className="object-cover object-bottom rounded-lg"
-                alt="Aqui va el alt de la imagen"
-                />
-              </div>
-              <h3 className="w-full">Titulo caso de exito</h3>
-              <p className="w-full text-sm">
-                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-              </p>
-            </div>
-            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3">
-              <div>
-                <Image
-                src="/img/alianzas/exito-8.png"
                 width={400}
                 height={200}
                 className="object-cover object-bottom rounded-lg"

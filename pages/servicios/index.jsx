@@ -2,11 +2,25 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import moment from "moment";
- 
+import SimpleSlider from "../../components/Slider";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 const index = () => {
+
+  const MySwal = withReactContent(Swal)
+
+  const callServices = () => {
+  Swal.fire({
+    title: 'Servicios en diversidad e inclusión',
+    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibu'  ,
+    imageUrl: '/img/servicios/diversidad-inclusion.jpg',
+    imageAlt: 'Custom image',
+    confirmButtonText: 'Salir',
+})
+}
+
   return (
     <Layout>
         <Head>
@@ -20,7 +34,7 @@ const index = () => {
             backgroundImage: `url(/img/servicios/portada-servicios.png)`,
           }}
         >
-          <div className="glass font-comm h-auto my-24 py-8 m-auto md:ml-[50px]">
+          <div className="glass font-comm h-auto my-32  m-auto md:ml-[50px]">
             <h2 className="text-gray-700 py-12 text-center text-3xl font-medium">
             Servicios en diversidad e inclusión
             </h2>
@@ -29,7 +43,7 @@ const index = () => {
               nacionales y transnacionales, a través de la implementación de
               sistemas que promueven la
             </p>
-            <button className="btn bg-[#A036AD] tex-white px-8 py-4 animate-none mt-8 ml-10">
+            <button className="btn bg-[#A036AD] tex-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
             </button>
           </div>
@@ -55,12 +69,12 @@ const index = () => {
                 varios temas de nuestro catálogo de servicios ajustándose a un
                 tiempo y presupuesto objetivo
               </p>
-              <div className="flex items-center justify-end flex-wrap">
-                <Link href="#">
-                  <button className="btn-servicios transition ease-in duration-250">
+              <div className="flex items-center justify-end flex-wrap">                
+                  <button className="btn-servicios transition ease-in duration-250"
+                  onClick={() => callServices()}
+                  >
                     Conoce más
                   </button>
-                </Link>
               </div>
             </div>
           </div>
@@ -187,31 +201,7 @@ const index = () => {
           </div>
           <div className="w-1/2">
           <div className="w-full border-2 bg-white border-gray-200 border-opacity-60 h-500">
-            <div className="p-6">
-              <Image
-                src="/img/home/alianzas-casos-de-exito.jpg"
-                width={700}
-                height={350}
-                className="object-cover object-bottom w-3/4"
-                alt="Aqui va el alt de la imagen"
-              />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Addition y Proanalytics unen esfuerzos por la Diversidad e Inclusión
-              </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
-              </p>
-                  <div className="space-x-4 flex justify-center">
-                  <ChevronLeftIcon 
-                    className="w-8 h-8 text-brink-pink-600 hover:text-violet-500 cursor-pointer "
-                  />
-                  <ChevronRightIcon
-                   className="w-8 h-8 text-brink-pink-600 hover:text-violet-500 cursor-pointer "
-                   />
-                  </div>
-              </div>
+            <SimpleSlider/>
           </div>
           </div>
         </section>

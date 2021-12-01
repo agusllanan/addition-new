@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import 'nextjs-breadcrumbs/dist/index.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

@@ -79,16 +79,6 @@ export default function Home() {
               <br /> <br />
               ¡Conoce más de nosotros!
             </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/uruUfi7OEAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-              allowfullscreen
-              className="mt-10 rounded-xl"
-            ></iframe>
           </div>
         </section>
         <section className="bg-[#EA5076] items-center py-12 flex flex-col justify-center font-comm">

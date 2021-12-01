@@ -64,155 +64,7 @@ const Navbar = ({ toggle }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Menu.Items className="origin-top-right absolute right-12 top-20 mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center">
-                <Menu.Item>
-                  {({ active }) => (
-                    <button
-                      className={`${
-                        active ? "text-keppel-600" : "text-brink-pink-600"
-                      } group font-bold flex rounded-md items-center w-full px-2 py-2 text-sm justify-center`}
-                    >
-                      <Link href="/servicios">SERVICIOS</Link>
-                    </button>
-                  )}
-                </Menu.Item>
-                <div className="py-1 px-1 flex flex-row">
-                  <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-text-brink-pink-600"
-                          } group font-bold flex rounded-md items-center w-full px-2 py-2 text-sm justify-center`}
-                        >
-                          <Link href="/climaLaboral">CLIMA LABORAL</Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/climaLaboral/estudios-clima-laboral">
-                            ESTUDIOS CLIMA LABORAL
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/climaLaboral/auditorias-nom-035">
-                            ASESORÍA EN NOM-035-STPS-2018 y NMX-R-025-SCFI-2015
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/climaLaboral/consultorias-capacitaciones">
-                            CONSULTORÍAS Y CAPACITACIÓN
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                  </div>
-                  <div className="px-2">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group font-bold flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/diseno-automatizacion-procesos">
-                            DISEÑO Y AUTOMATIZACIÓN DE PROCESOS
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/diseno-automatizacion-procesos/nivel1-desing-deploy">
-                            NIVEL 1 - DESING & DEPLOY
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/diseno-automatizacion-procesos/nivel2-create-do">
-                            NIVEL 2 - CREATE & DO
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/diseno-automatizacion-procesos/nivel3-project-management">
-                            NIVEL 3 - PROJECT MANAGEMENT
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                  </div>
-                  <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group font-bold justify-center flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/six-sigma">SIX SIGMA</Link>
-                        </button>
-                      )}
-                    </Menu.Item>
+              <Menu.Items className="origin-top-right absolute right-72 top-[70px] mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center"> 
                     <Menu.Item>
                       {({ active }) => (
                         <button
@@ -223,7 +75,7 @@ const Navbar = ({ toggle }) => {
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/basic-quick-smart-trainings">
-                            BASIC QUICK SMART TRAININGS
+                            Diversidad e inclusión
                           </Link>
                         </button>
                       )}
@@ -238,7 +90,7 @@ const Navbar = ({ toggle }) => {
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
                           <Link href="/six-sigma/nivel1-lean-6sigma-white-belt">
-                            NIVEL 1 - WHITE BELT
+                            Servicios Especializados
                           </Link>
                         </button>
                       )}
@@ -252,44 +104,12 @@ const Navbar = ({ toggle }) => {
                               : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/six-sigma/nivel2-lean-6sigma-yellow-belt">
-                            NIVEL 2 - YELLOW BELT
+                          <Link href="/six-sigma/nivel1-lean-6sigma-white-belt">
+                            Gestión de recursos humanos
                           </Link>
                         </button>
                       )}
                     </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/six-sigma/nivel3-lean-6sigma-green-belt">
-                            NIVEL 3 - GREEN BELT
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${
-                            active
-                              ? "bg-brink-pink-200 text-brink-pink-600"
-                              : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                        >
-                          <Link href="/six-sigma/nivel4-lean-6sigma-black-belt">
-                            NIVEL 4 - BLACK BELT
-                          </Link>
-                        </button>
-                      )}
-                    </Menu.Item>
-                  </div>
-                </div>
               </Menu.Items>
             </Transition>
             <Link href="/alianzas">
@@ -307,7 +127,7 @@ const Navbar = ({ toggle }) => {
                 BLOG
               </a>
             </Link>
-            <Link href="/contactanos">
+            <Link href="/contacto">
               <button className="btn">
                 CONTÁCTANOS
                 <svg
