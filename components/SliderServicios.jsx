@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image"
 
-export default function SimpleSlider() {
+export default function SliderServicios() {
   var settings = {
       className: "center",
       centerMode: true,
@@ -15,8 +15,8 @@ export default function SimpleSlider() {
       swipeToSlide: true,
   };
   return (
-    <Slider className="flex " {...settings}>
-      <div className="p-6">
+    <Slider className="" {...settings}>
+        <div className="p-6 mt-10">
               <Image
                 src="/img/home/bolsa-de-trabajo.jpg"
                 width={700}
@@ -25,13 +25,11 @@ export default function SimpleSlider() {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Hasta un 35% más de retorno sobre el capital
+                Una correcta gestión de <span className="font-bold">recursos humanos</span> ayuda a las empresas a lograr objetivos financieros y de crecimiento profesional.
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Las empresas con mayor representación de mujeres en puestos directivos, tienen hasta un 35% más de retorno sobre el capital y hasta un 34% más de retorno total para los accionistas. (The Balance).
-              </p>
       </div>
-          <div className="p-6">
+      
+          <div className="p-6 mt-10">
               <Image
                 src="/img/home/alianzas-casos-de-exito.jpg"
                 width={700}
@@ -40,13 +38,10 @@ export default function SimpleSlider() {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Lealtad y compromiso
+                El desarrollo del <span className="font-bold">talento humano</span> de una empresa ahorra costos de rotación de personal y salud organizacional.
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Fortalece la pertenencia, lealtad y compromiso con su empresa por parte del personal.
-              </p>
       </div>
-            <div className="p-6">
+            <div className="p-6 mt-10">
               <Image
                 src="/img/home/diversidad-inclusion.jpg"
                 width={700}
@@ -55,11 +50,9 @@ export default function SimpleSlider() {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                87% mejores decisiones
+                Mejora la productividad, el <span className="font-bold">clima laboral</span> y la comunicación interna de la empresa.
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Los equipos inclusivos toman mejores decisiones hasta en un 87 % del tiempo (Trello).
-              </p>
+
       </div>
     </Slider>
   );

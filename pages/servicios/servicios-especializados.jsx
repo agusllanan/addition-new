@@ -5,6 +5,7 @@ import Link from "next/link";
 import SimpleSlider from "../../components/Slider";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import SliderServicios from "../../components/SliderServicios";
 
 const serviciosEspecializados = () => {
   const MySwal = withReactContent(Swal)
@@ -37,9 +38,9 @@ const serviciosEspecializados = () => {
             Servicios Especializados
             </h2>
             <p className="text-gray-700 text-lg mx-10 text-justify">
-              Más de 20 años de experiencia haciendo trascender a empresas
-              nacionales y transnacionales, a través de la implementación de
-              sistemas que promueven la
+              ¡En Addition evolucionamos a un modelo de <span className="font-bold">servicios especializados!</span>
+
+              Estamos autorizados y cumplimos con todos los requisitos para ofrecer <span className="font-bold">Servicios Especializados</span> enfocados en enriquecer al personal de tu empresa para que logres alcanzar objetivos administrativos, comerciales y de innovación.
             </p>
             <button className="btn bg-[#FE6472] hover:bg-opacity-90 border-[#FE6472] text-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
@@ -60,12 +61,10 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Diversidad e inclusion
+                Addition Back Office Administrativo
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                Ofrecemos <span className="font-bold">soluciones profesionales</span> que optimizan los procesos contables, legales, comerciales y administrativos de tu empresa para mejorar la productividad y cumplimiento de los objetivos de esta.
               </p>
               <div className="flex items-center justify-end flex-wrap">                
                   <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
@@ -89,12 +88,10 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Servicios Especializados
+                Addition IT Technology
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+              <p className="leading-relaxed mb-3.5 text-justify pb-6">
+                Contamos con un <span className="font-bold">soporte profesional especializado</span> en programación, implementación, diseño, asesoría y servicios de internet.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
@@ -118,12 +115,10 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Gestión de recursos humanos
+                Addition personal de Marketing
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                Brindamos <span className="font-bold">soluciones especializadas</span> en el área de mercadotecnia, publicidad y actividades relacionadas, ayudando a nuestros clientes a impulsar sus ventas y hacer crecer tu negocio.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
@@ -148,15 +143,14 @@ const serviciosEspecializados = () => {
       </div>
       <div className="bg-white flex flex-col justify-center space-y-7 items-center w-1/2 font-comm">
         <h2 className="text-[#FE6472] text-2xl w-4/5">
-          Servicio resaltado
+          Servicios Especializados
         </h2>
         <p className="text-black w-4/5">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          Amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+          En Addition pensamos en ti y en las necesidades específicas de tu empresa, por eso, evolucionamos y te ofrecemos un modelo de <span className="font-bold">soporte profesional especializado</span> que ayude a tu organización a gestionar áreas y procesos de suma importancia en tu empresa para que tú puedas enfocarte en el crecimiento y desarrollo de esta.
         </p>
         <div className="w-4/5">
         <button className="btn-servicios border-[#FE6472] hover:text-[#FE6472] bg-[#FE6472] transition ease-in duration-250">
-          call to action
+          ¡Contáctanos!
         </button>
         </div>
       </div>
@@ -189,47 +183,35 @@ const serviciosEspecializados = () => {
             </div>
           </div>
         </div>
-        <section className="flex h-[500]">
-          <div className="flex w-1/2 justify-center items-center bg-[#FE6472] h-[540px]">
-            <h3 className="text-white text-4xl">
-              Por qué pensar en <br /><span className="font-bold">
-                Diversidad e inclusión?
-              </span>
-            </h3>
-          </div>
-          <div className="w-1/2">
-          <div className="w-full border-2 bg-white border-gray-200 border-opacity-60 h-500">
-            <SimpleSlider/>
-          </div>
-          </div>
-        </section>
-        <section className="bg-[#EDEDED] flex flex-col">
+        <section className="bg-[#EDEDED] flex flex-col cursor-pointer">
           <div className="px-10 py-10 font-comm text-xl">
             <h3>
               Conoce mas de este y otros temas en nuestro blog
             </h3>
           </div>
-          <div className="px-10">
-            <div className="grid grid-cols-4 grid-rows-1 gap-4 gap-x-4 py-6">
-            <div className="bg-white h-auto w-full shadow-lg flex flex-col items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
+          <Link href="/blog/alianza" >
+          <div className="p-10">
+            <div className="grid grid-cols-4 grid-rows-1 gap-4 gap-x-4 ">
+            <div className="bg-white h-auto w-full shadow-lg flex flex-col  items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
               <div>
                 <Image
-                src="/img/alianzas/exito-1.png"
+                src="/img/home/alianzas-casos-de-exito.jpg"
                 width={400}
                 height={200}
                 className="object-cover object-bottom rounded-lg"
                 alt="Aqui va el alt de la imagen"
                 />
               </div>
-              <h3 className="w-full">Entrada de blog 4</h3>
+              <h3 className="w-full">Addition y Proanalytics unen esfuerzos por la Diversidad e Inclusión</h3>
               <div className="justify-end w-full">
                 <p className="w-full text-sm text-[#69A3A2] pt-24">
-                  current date
+                  2, Diciembre 2021
                 </p>
               </div>
             </div>
             </div>
           </div>
+          </Link>
         </section>
       </main>
     </Layout>

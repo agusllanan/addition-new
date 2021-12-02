@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      margin:{
+        '18' : "90"
+      },
       inset: {
         '100': "400px",
       },
