@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 
-const index = () => {
+const diversidadInclusion = () => {
 
   const MySwal = withReactContent(Swal)
 
@@ -24,24 +24,26 @@ const index = () => {
   return (
     <Layout>
         <Head>
-        <title>Addition - Servicios</title>
+        <title>Addition - Diversidad e Inclusión</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main>
           <section 
-          className="bg-no-repeat bg-cover relative flex items-center"
+          className="bg-no-repeat bg-cover relative flex items-center px-10"
           style={{
             backgroundImage: `url(/img/servicios/portada-servicios.png)`,
           }}
         >
-          <div className="glass font-comm h-auto my-32  m-auto md:ml-[50px]">
-            <h2 className="text-gray-700 py-12 text-center text-3xl font-medium">
-            Servicios en diversidad e inclusión
+          <div className="glass font-comm h-auto mt-32 mb-16  m-auto md:ml-[50px]">
+            <h2 className="text-gray-700 py-6 text-center text-3xl font-medium">
+            Diversidad e Inclusión
             </h2>
             <p className="text-gray-700 text-lg mx-10 text-justify">
-              Más de 20 años de experiencia haciendo trascender a empresas
-              nacionales y transnacionales, a través de la implementación de
-              sistemas que promueven la
+              Nuestro compromiso es crear un buen ambiente laboral dentro de las empresas, por lo que implementamos programas de <span className="font-bold">diversidad & inclusión</span>{' '}
+              para mejorar la productividad de las organizaciones y el cumplimiento de la normatividad vigente.
+              <br />
+              Apoyamos a las empresas a implementar mecanismos de denuncia por lo que 
+              contamos con un sistema para <span className="font-bold">prevenir, atender y sancionar prácticas de discriminación y violencia laboral. </span>
             </p>
             <button className="btn bg-[#A036AD] tex-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
@@ -51,7 +53,7 @@ const index = () => {
         <section className="bg-gradient-to-tl from-[#5900B1] to-[#FD1593] items-center py-12 flex flex-col justify-center font-comm">
           <h2 className="text-white text-3xl mb-4">Servicios en diversidad e inclusión</h2>
           <section className="flex flex-row space-x-12 mt-5">
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[730px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -62,12 +64,13 @@ const index = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Diversidad e inclusion
+                Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y no Discriminación<n></n>
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                Certifícate en la <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.</span>
+
+                Reconoce a tu empresa como un centro de trabajo que cuenta con prácticas en materia de <span className="font-bold">igualdad laboral y no discriminación,</span>
+                para favorecer el desarrollo integral de las y los trabajadores.
               </p>
               <div className="flex items-center justify-end flex-wrap">                
                   <button className="btn-servicios transition ease-in duration-250"
@@ -80,8 +83,8 @@ const index = () => {
           </div>
         </div>
         {/*--------- Segundo servicios -------*/}
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+        <div className="h-[730px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/servicios/servicios-especializados.jpg"
@@ -91,16 +94,18 @@ const index = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Servicios Especializados
+                Norma Oficial Mexicana NOM-035-STPS-2018
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                ¡Nos preocupamos por las personas que forman tu empresa! 
+
+                Identificar, analizar y prever <span className="font-bold">factores de riesgo psicosocial</span> en tu empresa y promueve un entorno organizacional favorable para tus trabajadores. 
+
+                Logra la certificación de tu empresa.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="btn-servicios transition ease-in duration-250">
+                  <button className="btn-servicios transition mt-14 ease-in duration-250">
                     Conoce más
                   </button>
                 </Link>
@@ -109,8 +114,8 @@ const index = () => {
           </div>
         </div>
         {/*--------- Tercer servicios -------*/}
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+        <div className="h-[730px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/servicios/gestion-recursos.jpg"
@@ -120,16 +125,15 @@ const index = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Gestión de recursos humanos
+                Distintivo de Empresa Socialmente Responsable
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                Adopta los principios de una empresa socialmente responsable como parte de la cultura de tu empresa y como estrategia de negocio generando más competitividad empresarial y un mejor funcionamiento interno de tus trabajadores. 
+                Obtén el distintivo de <span className="font-bold">Empresa Socialmente Responsable.</span>
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="btn-servicios transition ease-in duration-250">
+                  <button className="btn-servicios mt-8 transition ease-in duration-250">
                     Conoce más
                   </button>
                 </Link>
@@ -213,51 +217,6 @@ const index = () => {
           </div>
           <div className="px-10">
             <div className="grid grid-cols-4 grid-rows-1 gap-4 gap-x-4 ">
-              <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
-              <div>
-                <Image
-                src="/img/alianzas/exito-1.png"
-                width={400}
-                height={200}
-                className="object-cover object-bottom rounded-lg"
-                alt="Aqui va el alt de la imagen"
-                />
-              </div>
-              <h3 className="w-full">Entrada de blog 1</h3>
-              <p className="w-full text-sm">
-                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-              </p>
-            </div>
-            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
-              <div>
-                <Image
-                src="/img/alianzas/exito-1.png"
-                width={400}
-                height={200}
-                className="object-cover object-bottom rounded-lg"
-                alt="Aqui va el alt de la imagen"
-                />
-              </div>
-              <h3 className="w-full">Entrada de Blog 2</h3>
-              <p className="w-full text-sm">
-                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-              </p>
-            </div>
-            <div className="bg-white h-auto w-full shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
-              <div>
-                <Image
-                src="/img/alianzas/exito-1.png"
-                width={400}
-                height={200}
-                className="object-cover object-bottom rounded-lg"
-                alt="Aqui va el alt de la imagen"
-                />
-              </div>
-              <h3 className="w-full">Entrada de blog 3</h3>
-              <p className="w-full text-sm">
-                Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination of fruits.
-              </p>
-            </div>
             <div className="bg-white h-auto w-full shadow-lg flex flex-col  items-center space-y-4 hover:scale-105 hover:shadow-2xl p-3 rounded-sm">
               <div>
                 <Image
@@ -283,4 +242,4 @@ const index = () => {
   )
 }
 
-export default index
+export default diversidadInclusion

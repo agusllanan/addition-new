@@ -38,12 +38,11 @@ const callServices = () => {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                  <button 
-                  className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250"
-                  onClick={() => callServices()}
-                  >
+                <Link href="/servicios/diversidad-inclusion">
+                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
                     Conoce más
                   </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -68,7 +67,7 @@ const callServices = () => {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                <Link href="#">
+                <Link href="/servicios/servicios-especializados">
                   <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
                     Conoce más
                   </button>
@@ -97,7 +96,7 @@ const callServices = () => {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                <Link href="#">
+                <Link href="/servicios/gestion-recursos-humanos">
                   <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
                     Conoce más
                   </button>

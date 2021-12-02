@@ -93,7 +93,7 @@ export default function Home() {
               Conoce nuestra <br />
               <span>metodología</span>
             </h2>
-            <p className="text-base text-gray-600 w-4/5">
+            <p className="text-base text-gray-600 w-4/5 py-3">
               Sabemos que las personas que conforman tu empresa son cruciales
               para su crecimiento. <br /> <br /> Estamos comprometidos a
               ayudarte con la{" "}
@@ -112,8 +112,6 @@ export default function Home() {
               <span className="font-bold">
                 consultoría Administrativa y de Gestión.
               </span>{" "}
-              <br /> <br />
-              ¡Conoce más de nosotros!
             </p>
             <button className="text-white rounded-3xl py-2 px-6 bg-[#9825A6] hover:bg-[#ce84d8] my-2">
               Conoce más
@@ -167,7 +165,7 @@ export default function Home() {
         >
           <section className="glass font-comm h-auto">
             <h2 className="text-gray-700 pt-8 pb-6 text-center text-3xl font-medium h-auto">
-              "¿Tu organización asume las normas sobre diversidad e inclusión?"
+              “El éxito de una empresa es simplemente el reflejo de la actitud, grado de motivación y compromiso de las personas que la forman” Camilo Cruz
             </h2>
           </section>
         </div>
@@ -192,7 +190,7 @@ export default function Home() {
                 tiempo y presupuesto objetivo
               </p>
               <div className="flex items-center flex-wrap">
-                  <Link href="#">
+                  <Link href="blog/alianza">
                     <button className="inline-flex text-[#69C6FA] font-bold border-2 border-[#69C6FA]  py-2 px-6 focus:outline-none hover:bg-[#83d2ff] hover:text-white rounded text-lg transition ease-in duration-250">
                     Leer el artículo
                     </button>
@@ -206,22 +204,22 @@ export default function Home() {
             <h3 className="w-1/2 text-3xl text-[#69C6FA] py-10">
               Alianzas y casos de éxito
             </h3>
-            <p className="w-1/2 py-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nostrum? Illum laboriosam ipsam recusandae? Ipsum excepturi error vero voluptas ab, saepe odio aliquid velit quisquam at quae. Quisquam, soluta aut.
+            <p className="w-1/2 py-5 pr-10">
+              Para Addition, la unión hace la fuerza. <br /> <br />
+
+              Nuestros clientes son parte importante de nuestro crecimiento, por lo que hemos construido útiles alianzas con empresas especializadas para mayor eficiencia en nuestras soluciones. <br /> <br />
+
+              Hemos trabajado con empresas tanto públicas como privadas de todos los giros: <br /> <br />
+              Industriales: Extractivas, manufactureras, de consumo final, producción, etc. <br /> <br />
+              Comerciales: Mayoristas, minoristas, comisionistas. <br /> <br />
+              De servicios: Transporte, turismo, instituciones financieras, servicios públicos y privados, educación, finanzas, salud, farmacéutica, etc.
             </p>
-              <Image
-              src="/img/portada/logos.png"
-              width={500}
-              height={250}
-              className="relative pl-10 py-10"
-              alt=""
-            />
-            <button className="text-white rounded-3xl py-2 px-6 my-2 bg-[#69C6FA]">
+            <button className="text-white mr-10 rounded-3xl border-2 border-[#69C6FA] py-2 px-6 my-2 bg-[#69C6FA] hover:bg-white hover:text-[#69C6FA]">
               Conoce más
             </button>
           </div>
         </section>
-        <section className="flex flex-col h-[400px] bg-[#EA5076]">
+        <section className="flex flex-col h-[500px] bg-[#EA5076]">
           <div className="py-10 pl-28 w-5/6">
             <h3 className="font-comm text-white font-light text-3xl">
               Lo que nuestros clientes <br/> opinan de nosotros
@@ -230,26 +228,26 @@ export default function Home() {
           <div className="flex flex-row space-x-10 w-5/6 mx-auto">
             <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
                 <p className="">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                  “Somos una empresa transnacional con representación en México. Addition nos ha brindado asesoría integral en la <span className="font-bold">gestión de nuestro personal,</span> Addition es reconocido internamente en nuestra organización por otros países, como parte del éxito de los resultados en el crecimiento de la operación en México”.
                 </p>
                 <p className="text-base text-[#69A3A2]">
-                  Name, and company 
+                  MARKEN a UPS company 
                 </p>
             </div>
             <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
                 <p className="">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                  “Somos una Firma comprometida con la <span className="font-bold">inclusión y la diversidad,</span> por esto, decidimos apoyarnos de Addition para obtener la certificación en la <span className="font-bold">Norma de Igualdad Laboral y no Discriminación,</span> quienes nos asesoraron en materia de interpretación e integración de evidencias. Agradecemos su apoyo para cumplir con dicho objetivo.”
                 </p>
                 <p className="text-base text-[#69A3A2]">
-                  Name, and company 
+                  KPMG 
                 </p>
             </div>
             <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
                 <p className="">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea placeat explicabo eveniet suscipit vel nulla unde pariatur ex? Magni laborum iste quas culpa reprehenderit possimus minima, vero est ea.
+                  “Somos una empresa donde la <span className="font-bold">seguridad e integridad de nuestros colaboradores</span> es de suma importancia por las actividades que desempeñan, Addition nos asesoró para implementar la <span className="font-bold">Nom 035,</span> alineando el cumplimiento de esta norma a otras que estamos obligados a atender por el giro de nuestro negocio.”
                 </p>
                 <p className="text-base text-[#69A3A2]">
-                  Name, and company 
+                  ADT 
                 </p>
             </div>
           </div>

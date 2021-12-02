@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                               : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/six-sigma/basic-quick-smart-trainings">
+                          <Link href="/servicios/diversidad-inclusion">
                             Diversidad e inclusión
                           </Link>
                         </button>
@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
                               : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/six-sigma/nivel1-lean-6sigma-white-belt">
+                          <Link href="/servicios/servicios-especializados">
                             Servicios Especializados
                           </Link>
                         </button>
@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
                               : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/six-sigma/nivel1-lean-6sigma-white-belt">
+                          <Link href="/servicios/gestion-recursos-humanos">
                             Gestión de recursos humanos
                           </Link>
                         </button>
