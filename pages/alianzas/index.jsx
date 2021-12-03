@@ -21,7 +21,7 @@ const alianzas = () => {
       />
     </div>
     <section className="flex w-full h-[200px] justify-center items-center">
-        <h3 className="text-[#EA5076] text-5xl font-comm font-bold">Proximamente</h3>
+        <h3 className="text-[#EA5076] text-5xl font-comm font-bold">Próximamente</h3>
     </section>
     </Layout>
   )
