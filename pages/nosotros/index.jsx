@@ -125,18 +125,15 @@ const nosotros = () => {
             </ol>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
-              <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/uruUfi7OEAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-              allowfullscreen
-              className="mt-10 rounded-xl"
-            ></iframe>
+              <Image
+                src="/img/nosotros/footer-nosotros.png"
+                width={560}
+                height={315}
+                className="object-cover object-center mt-10 rounded-xl"
+                alt="Aqui va el alt de la imagen"
+              />
             </div>   
-    </section>
+    </section> 
     <div className="w-full bg-gray-200 font-comm">
           <div className="flex flex-wrap text-center font-jost divide-x-2 divide-white">
             <div className="py-10 w-1/3">
