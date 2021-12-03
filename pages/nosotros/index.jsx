@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUsers, faBalanceScale, faHandshake, faPeopleArrows, faHandHoldingHeart, faHeart, faUserPlus, faArrowsAltV } from '@fortawesome/free-solid-svg-icons'
 
@@ -25,38 +26,41 @@ const nosotros = () => {
           ¿Quiénes somos?
         </h2>
         <p className="w-1/2 text-justify">
-          En Addition Human Resources sabemos que el recurso más valioso de su empresa es tu gente. <br /> <br />
+          En Addition Human Resources sabemos que el recurso más valioso de tu empresa es su gente. <br /> <br />
           Somos una empresa mexicana de consultoría en <span className="font-bold">Recursos Humanos</span> con más de 20 años de experiencia en proporcionar asesoría para la <span className="font-bold">motivación, retención y desarrollo del recurso humano de las empresas. </span> <br /> <br />
           Contamos con programas de gestión interna para <span className="font-bold">ingreso, permanencia y desarrollo del personal;</span> basado en una <span className="font-bold">cultura de respeto</span> que contribuye a tener una sociedad más incluyente con <span className="font-bold">igualdad de oportunidades, sin discriminación</span> o cualquier dimensión que prive los derechos de la persona. <br /> <br />
           Estamos constituidos por personal de amplia experiencia y trayectoria en Sistemas de <span className="font-bold">Gestión, Recursos Humanos, Igualdad Laboral y Género.</span> 
         </p>
     </div>
     <section className="flex flex-row ">
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/3">
         <div
-          className="bg-no-repeat bg-cover relative h-[600px] object-center"
+          className="bg-no-repeat bg-cover h-[613px] content-left"
           style={{
             backgroundImage: `url(/img/nosotros/lihuba-nosotros.png)`,
           }}
       />
       </div>
-      <div className="bg-[#EA5076] flex flex-col justify-center space-y-7 items-center w-1/2 font-comm py-6">
+      <div className="bg-[#EA5076] flex flex-col justify-center space-y-7 items-center w-2/3 font-comm py-6">
         <h2 className="text-white text-2xl w-4/5">
           Acerca de Lihuba Vences
         </h2>
         <p className="text-white w-4/5">
-        CEO de Addition Human Resources. <br /> <br />
+        Psicóloga egresada de la Universidad Nacional Autónoma de México especializada en el área laboral y desarrollo organizacional, con <span className="font-bold">certificaciones para asesorar y auditar programas de género para erradicar la discriminación y contribuir a la igualdad de oportunidades. </span> <br /> <br />
 
-        Cuenta con experiencia en la optimización de procesos para el cumplimiento de los objetivos estratégicos del negocio, a través, del establecimiento de planes y estrategias de motivación, <span className="font-bold">retención y desarrollo de Capital Humano.</span> <br /> <br />
+        <span className="font-bold">Cuenta con capacitación en el desarrollo de competencias de Ombudsperson Organizacional,</span> Coach e instructora de diversos temas; recursos humanos, sistemas de gestión, derechos humanos, hostigamiento y acoso, igualdad laboral, violencia laboral y no discriminación.<br /> <br />
 
-        Ha apoyado en formación, procesos de auditoría y asesoría para la certificación y re - certificación en la <span className="font-bold">NOM-025 y NOM-035</span> (verificar información) empresas del sector público y privado entre las que se encuentran: Jhonson Controls (17,500 personas aprox.) H. Ayuntamiento de Puebla (5750 personas aprox.) y más. <br /> <br/>
+        Fundó <span className="font-bold">Addition Human Resources</span> con el propósito de optimizar el cumplimiento de los objetivos estratégicos de las empresas, a través, del establecimiento de planes y estrategias de motivación, retención y desarrollo de Capital Humano, enfocados a atender la diversidad e inclusion de las personas.<br /> <br />
 
-        Participó en la actualización del <span className="font-bold">MEG:2012,</span> habiendo sido considerada  por mis competencias, experiencia en sistemas de gestión; así como en la aplicación del <span className="font-bold">Modelo de Equidad de Género.</span>
+        Ha apoyado de manera parcial o integral a más de 2000 empresas en sus procesos de gestión de Recursos Humanos, cuenta con experiencia en formación, procesos de auditoría y asesoría para la acreditación, certificación y re - certificación de Distintivos de Género,  Discriminación, <span className="font-bold">Diversidad & Inclusión;</span> incluyendo la <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y no Discriminación, y Norma Oficial Mexicana NOM-035-STPS- Factores de riesgo psicosocial</span> Identificación, análisis, prevención y distintivos de la Secretaria de Trabajo y Previsión Social.
         </p>
         <div className="w-4/5">
+        <Link href="/contacto">
         <button className="btn bg-white hover:bg-gray-200 text-[#EA5076] py-3">
           Ponte en contacto conmigo
         </button>
+        </Link>
+        
         </div>
       </div>
     </section>
@@ -94,7 +98,7 @@ const nosotros = () => {
           <h3 className="w-2/3">
             Nuestra visión
           </h3>
-          <p className="w-2/3">
+          <p className="w-2/3" id="aqui">
             Ser reconocidos como una de las principales empresas de <span className="font-bold">Recursos Humanos</span> dentro del país en donde la confianza sea nuestra primera recomendación.
           </p>
         </div>

@@ -19,8 +19,8 @@ const callServices = () => {
     <>
       {/* // ------------ Primer Servicio ------------ */}
       <section className="flex flex-row space-x-12 mt-5">
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/servicios/diversidad-inclusion.jpg"
@@ -30,12 +30,10 @@ const callServices = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Diversidad e inclusion
+                Diversidad e Inclusión
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                  Implementamos programas de <span className="font-bold">diversidad e inclusión</span>  para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente.
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/diversidad-inclusion">
@@ -48,8 +46,8 @@ const callServices = () => {
           </div>
         </div>
         {/*--------- Segundo servicios -------*/}
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/servicios/servicios-especializados.jpg"
@@ -62,9 +60,7 @@ const callServices = () => {
                 Servicios Especializados
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+                Estamos autorizados y cumplimos con todos los requisitos para ofrecer servicios especializados enfocados en enriquecer el personal de su empresa.
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/servicios-especializados">
@@ -77,8 +73,8 @@ const callServices = () => {
           </div>
         </div>
         {/*--------- Tercer servicios -------*/}
-        <div className="h-[596px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/servicios/gestion-recursos.jpg"
@@ -88,12 +84,10 @@ const callServices = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Gestión de recursos humanos
+                Gestión de Recursos Humanos
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Con la asesoría de nuestro Coach, podrás elegir entre uno o
-                varios temas de nuestro catálogo de servicios ajustándose a un
-                tiempo y presupuesto objetivo
+              <p className="leading-relaxed mb-3 pb-6 text-justify">
+                Brindamos <span className="font-bold">Servicios Especializados</span> con administración total y/o parcial de sus procesos de <span className="font-bold">Recursos Humanos.</span>
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/gestion-recursos-humanos">

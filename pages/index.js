@@ -3,8 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Servicios from "../components/Servicios";
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+
 
 export default function Home() {
+  configureAnchors({offset: 28, scrollDuration: 1000})
   return (
     <Layout>
       <Head>
@@ -37,12 +41,14 @@ export default function Home() {
                 Norma Mexicana en Igualdad Laboral y No Discriminación.
               </span>
             </p>
-            <button className="btn px-8 py-4 animate-none mt-8 ml-10">
+            <a href="#servicios">
+              <button className="btn px-8 py-4 animate-none mt-8 ml-10">
               Conoce más
             </button>
+            </a>
           </section>
         </div>
-        <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm">
+        <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm pt-24">
           <div className="w-full md:w-1/2 overflow-hidden self-end -m-10">
             <Image
               src="/img/home/lihuba-home.png"
@@ -81,10 +87,12 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <ScrollableAnchor id={'servicios'}>
         <section className="bg-[#EA5076] items-center py-12 flex flex-col justify-center font-comm">
           <h2 className="text-white text-3xl mb-4">Nuestros Servicios</h2>
           <Servicios />
         </section>
+        </ScrollableAnchor>
         {/* Seccion de metodologia */}
         <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm px-10 ">
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center">
@@ -113,9 +121,11 @@ export default function Home() {
                 consultoría Administrativa y de Gestión.
               </span>{" "}
             </p>
+            <Link href="/nosotros/#aqui">
             <button className="text-white rounded-3xl py-2 px-6 bg-[#9825A6] hover:bg-[#ce84d8] my-2">
               Conoce más
             </button>
+            </Link>
           </div>
           <div className="w-full md:w-1/2 overflow-hidden flex justify-center">
             <Image
@@ -214,9 +224,11 @@ export default function Home() {
               Comerciales: Mayoristas, minoristas, comisionistas. <br /> <br />
               De servicios: Transporte, turismo, instituciones financieras, servicios públicos y privados, educación, finanzas, salud, farmacéutica, etc.
             </p>
-            <button className="text-white mr-10 rounded-3xl border-2 border-[#69C6FA] py-2 px-6 my-2 bg-[#69C6FA] hover:bg-white hover:text-[#69C6FA]">
-              Conoce más
-            </button>
+            <Link href="/alianzas">
+              <button className="text-white mr-10 rounded-3xl border-2 border-[#69C6FA] py-2 px-6 my-2 bg-[#69C6FA] hover:bg-white hover:text-[#69C6FA]">
+                Conoce más
+              </button>
+            </Link>
           </div>
         </section>
         <section className="flex flex-col h-[500px] bg-[#EA5076]">

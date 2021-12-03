@@ -5,18 +5,60 @@ import Link from "next/link";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import SliderGestion from "../../components/SliderGestion";
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+
+configureAnchors({offset: 20, scrollDuration: 1000})
 
 
 const gestionRecursosHumanos = () => {
   const MySwal = withReactContent(Swal)
 
+
+
+  const callServicesEv = () => {
+  Swal.fire({
+  imageUrl: '/img/gestion/proyecto.png',
+  title: 'Evaluación de Talento Humano y Organizacional',
+  html:
+    '<p>Fortalece los procesos internos de tu organización con nuestras evaluaciones y diagnóstico. </p><br /> <ul class="w-full"><li class="text-[#12B0F4]">Assessment Center</li><li class="text-[#12B0F4]">Evaluación Psicométrica y Proyectiva</li><li class="text-[#12B0F4]">Evaluación del Desempeño</li><li class="text-[#12B0F4]">Diagnóstico de Clima Laboral y Organizacional</li></ul>' ,
+  showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: true,
+  confirmButtonText:
+    '<a href="/contacto">Contactarnos</a>',
+})
+} 
+
+
+
+
   const callServices = () => {
   Swal.fire({
-    title: 'Servicios en diversidad e inclusión',
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibu'  ,
-    imageUrl: '/img/servicios/diversidad-inclusion.jpg',
-    imageAlt: 'Custom image',
-    confirmButtonText: 'Salir',
+    imageUrl: '/img/gestion/juntas.png',
+    title: 'Atracción y Selección de Talento Humano',
+  html:
+    '<p>Contrata al personal adecuado para el crecimiento de tu organización.Contamos con servicios de <span className="font-bold">reclutamiento y selección</span> de personal, <span className="font-bold">Head Hunter,  Estudios Socioeconómicos y Laborales</span> y más.</p>',
+  showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: true,
+  confirmButtonText:
+    '<a href="/contacto">Contactarnos</a>',
+})
+}
+
+
+const callServicesE = () => {
+  Swal.fire({
+    imageUrl: '/img/gestion/entrenamiento.png',
+    title: 'Entrenamiento, Capacitación y Desarrollo (virtual y presencial)',
+  html:
+    '<p>La capacitación y desarrollo del personal de tu empresa es básico para el crecimiento de esta. <br/> En Addition, contamos con diferentes metodologías de capacitación y desarrollo para el crecimiento de tu organización.</p><br /> <ul class="w-full"><li class="text-[#12B0F4]">Team Building</li><li class="text-[#12B0F4]">Capacitación tradicional</li><li class="text-[#12B0F4]">Diseño de Programas de Coaching</li></ul>' ,
+  showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: true,
+  confirmButtonText:
+    '<a href="/contacto">Contactarnos</a>',
 })
 }
 
@@ -41,11 +83,14 @@ const gestionRecursosHumanos = () => {
               Conocemos la importancia de la gestión del personal para tu empresa, por lo que brindamos servicios especializados con administración total y/o parcial de sus procesos de Recursos Humanos. <br />
               Te ayudamos a mejorar y gestionar tu plantilla laboral con la atracción y <span className="font-bold">selección, evaluación, entrenamiento, capacitación y desarrollo de talento humano</span> dentro de tu organización para que puedas concentrarte en las tareas más importantes para el crecimiento de tu empresa.
             </p>
-            <button className="btn bg-[#12B0F4] hover:bg-opacity-90 border-[#12B0F4] text-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
+            <a href="#serviciosg">
+            <button className="btn bg-[#12B0F4] hover:bg-[#7cd8ff] border-[#12B0F4] text-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
             </button>
+            </a>
           </div>
         </section>
+        <ScrollableAnchor id={"serviciosg"}>
         <section className="bg-gradient-to-l from-[#5A00C8] to-[#00DBFF] items-center py-12 flex flex-col justify-center font-comm px-10">
           <h2 className="text-white text-3xl mb-4">Gestión de Recursos Humanos</h2>
           <section className="flex flex-row space-x-4 mt-5">
@@ -62,12 +107,11 @@ const gestionRecursosHumanos = () => {
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
                 Atracción y Selección de Talento Humano
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-              Contrata al personal adecuado para el crecimiento de tu organización. 
-              Contamos con servicios de <span className="font-bold">reclutamiento y selección</span> de personal, <span className="font-bold">Head Hunter,  Estudios Socioeconómicos y Laborales</span> y más.
+              <p className="leading-relaxed mb-10 text-justify">
+              Contrata al personal adecuado para el crecimiento de tu organización.
               </p>
               <div className="flex items-center justify-end flex-wrap">                
-                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250 mt-18"
+                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250"
                   onClick={() => callServices()}
                   >
                     Conoce más
@@ -92,14 +136,12 @@ const gestionRecursosHumanos = () => {
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
                 Fortalece los procesos internos de tu organización con nuestras evaluaciones y diagnóstico. <br />
-                Assessment Center <br />
-                Evaluación Psicometría y Proyectiva <br />
-                Evaluación del Desempeño <br />
-                Diagnóstico de Clima Laboral y Organizacional
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="btn-servicios mt-6 bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250">
+                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250"
+                  onClick={() =>callServicesEv()}
+                  >
                     Conoce más
                   </button>
                 </Link>
@@ -109,7 +151,7 @@ const gestionRecursosHumanos = () => {
         </div>
         {/*--------- Tercer servicios -------*/}
         <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/gestion/entrenamiento.png"
@@ -123,23 +165,21 @@ const gestionRecursosHumanos = () => {
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
                 La capacitación y desarrollo del personal de tu empresa es básico para el crecimiento de esta. 
-                En Addition, contamos con diferentes metodologías de capacitación y desarrollo para el crecimiento de tu organización. <br />
-                Team Building <br />
-                Capacitación tradicional. <br />
-                Diseño de Programas de Coaching
+              
               </p>
               <div className="flex items-center justify-end flex-wrap">
-                <Link href="#">
-                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250">
+                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250"
+                  onClick={() => callServicesE()}
+                  >
                     Conoce más
                   </button>
-                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
       </section>
+      </ScrollableAnchor>
       <section className="h-[400px] flex flex-row">
       <div className="w-full md:w-1/2">
         <div
@@ -159,9 +199,11 @@ const gestionRecursosHumanos = () => {
           En Addition estamos comprometidos a ayudarte con la <span className="font-bold">motivación, retención y desarrollo de talento de tu equipo de trabajo,</span> por lo que proporcionamos soluciones funcionales y prácticas con una comunicación estrecha y personalizada a nivel organizacional, individual y/o grupal para cumplir con los objetivos de tu organización. 
         </p>
         <div className="w-4/5">
+        <Link href="/contacto">
         <button className="btn-servicios border-[#12B0F4] hover:text-[#12B0F4] bg-[#12B0F4] transition ease-in duration-250">
           ¡Contáctanos!
         </button>
+        </Link>
         </div>
       </div>
     </section>

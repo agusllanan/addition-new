@@ -5,6 +5,12 @@ import Link from "next/link";
 import SimpleSlider from "../../components/Slider";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+
+
+
+configureAnchors({offset: 30, scrollDuration: 1000})
 
 
 const diversidadInclusion = () => {
@@ -17,7 +23,7 @@ const diversidadInclusion = () => {
     text: 'Certifícate en la Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.Reconoce a tu empresa como un centro de trabajo que cuenta con prácticas en materia de igualdad laboral y no discriminación,para favorecer el desarrollo integral de las y los trabajadores.',
     imageUrl: '/img/servicios/diversidad-inclusion.jpg',
     imageAlt: 'Custom image',
-    confirmButtonText: 'Salir',
+    confirmButtonText: 'Contactanos',
 })
 }
 
@@ -66,13 +72,16 @@ const diversidadInclusion = () => {
               Apoyamos a las empresas a implementar mecanismos de denuncia por lo que 
               contamos con un sistema para <span className="font-bold">prevenir, atender y sancionar prácticas de discriminación y violencia laboral. </span>
             </p>
-            <button className="btn bg-[#A036AD] tex-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
+            <a href="#serviciosd">
+            <button className="btn bg-[#A036AD] hover:bg-[#a159ab] tex-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
             </button>
+            </a>    
           </div>
         </section>
+        <ScrollableAnchor id={'serviciosd'}>
         <section className="bg-gradient-to-tl from-[#5900B1] to-[#FD1593] items-center py-12 flex flex-col justify-center font-comm">
-          <h2 className="text-white text-3xl mb-4">Servicios en diversidad e inclusión</h2>
+          <h2 className="text-white text-3xl mb-4">Servicios en Diversidad e Inclusión</h2>
           <section className="flex flex-row space-x-12 mt-5">
         <div className="h-[600px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
@@ -160,6 +169,7 @@ const diversidadInclusion = () => {
         </div>
       </section>
       </section>
+      </ScrollableAnchor>
       <section className="h-[400px] flex flex-row">
       <div className="w-full md:w-1/2">
         <div

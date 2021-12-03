@@ -2,23 +2,15 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import SimpleSlider from "../../components/Slider";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-import SliderServicios from "../../components/SliderServicios";
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+
+configureAnchors({offset: -45, scrollDuration: 1000})
 
 const serviciosEspecializados = () => {
   const MySwal = withReactContent(Swal)
-
-  const callServices = () => {
-  Swal.fire({
-    title: 'Servicios en diversidad e inclusión',
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibus, ea ad commodi neque quis optio iusto totam, possimus sapiente maxime accusantium natus minima repellat rem! Maiores, quas rem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsa necessitatibu'  ,
-    imageUrl: '/img/servicios/diversidad-inclusion.jpg',
-    imageAlt: 'Custom image',
-    confirmButtonText: 'Salir',
-})
-}
 
   return (
     <Layout>
@@ -42,11 +34,14 @@ const serviciosEspecializados = () => {
 
               Estamos autorizados y cumplimos con todos los requisitos para ofrecer <span className="font-bold">Servicios Especializados</span> enfocados en enriquecer al personal de tu empresa para que logres alcanzar objetivos administrativos, comerciales y de innovación.
             </p>
+            <a href="#serviciose">
             <button className="btn bg-[#FE6472] hover:bg-opacity-90 border-[#FE6472] text-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
               Conoce más
             </button>
+            </a>
           </div>
         </section>
+        <ScrollableAnchor id={"serviciose"}>
         <section className="bg-gradient-to-l from-[#FD1593] to-[#FFFF33] items-center py-12 flex flex-col justify-center font-comm">
           <h2 className="text-white text-3xl mb-4">Servicios Especializados</h2>
           <section className="flex flex-row space-x-12 mt-5">
@@ -66,12 +61,13 @@ const serviciosEspecializados = () => {
               <p className="leading-relaxed mb-3 text-justify">
                 Ofrecemos <span className="font-bold">soluciones profesionales</span> que optimizan los procesos contables, legales, comerciales y administrativos de tu empresa para mejorar la productividad y cumplimiento de los objetivos de esta.
               </p>
-              <div className="flex items-center justify-end flex-wrap">                
+              <div className="flex items-center justify-end flex-wrap">
+                <Link href="/contacto">
                   <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
-                  onClick={() => callServices()}
                   >
-                    Conoce más
+                    Contáctanos
                   </button>
+                </Link>   
               </div>
             </div>
           </div>
@@ -94,11 +90,12 @@ const serviciosEspecializados = () => {
                 Contamos con un <span className="font-bold">soporte profesional especializado</span> en programación, implementación, diseño, asesoría y servicios de internet.
               </p>
               <div className="flex items-center justify-end flex-wrap">
-                <Link href="#">
-                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250">
-                    Conoce más
+                <Link href="/contacto">
+                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
+                  >
+                    Contáctanos
                   </button>
-                </Link>
+                </Link>   
               </div>
             </div>
           </div>
@@ -121,17 +118,19 @@ const serviciosEspecializados = () => {
                 Brindamos <span className="font-bold">soluciones especializadas</span> en el área de mercadotecnia, publicidad y actividades relacionadas, ayudando a nuestros clientes a impulsar sus ventas y hacer crecer tu negocio.
               </p>
               <div className="flex items-center justify-end flex-wrap">
-                <Link href="#">
-                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250">
-                    Conoce más
+                <Link href="/contacto">
+                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
+                  >
+                    Contáctanos
                   </button>
-                </Link>
+                </Link>   
               </div>
             </div>
           </div>
         </div>
       </section>
       </section>
+      </ScrollableAnchor>
       <section className="h-[400px] flex flex-row">
       <div className="w-full md:w-1/2">
         <div
@@ -149,9 +148,12 @@ const serviciosEspecializados = () => {
           En Addition pensamos en ti y en las necesidades específicas de tu empresa, por eso, evolucionamos y te ofrecemos un modelo de <span className="font-bold">soporte profesional especializado</span> que ayude a tu organización a gestionar áreas y procesos de suma importancia en tu empresa para que tú puedas enfocarte en el crecimiento y desarrollo de esta.
         </p>
         <div className="w-4/5">
-        <button className="btn-servicios border-[#FE6472] hover:text-[#FE6472] bg-[#FE6472] transition ease-in duration-250">
+        <Link href="/contacto">
+          <button className="btn-servicios border-[#FE6472] hover:text-[#FE6472] bg-[#FE6472] transition ease-in duration-250">
           ¡Contáctanos!
         </button>
+        </Link>
+        
         </div>
       </div>
     </section>
