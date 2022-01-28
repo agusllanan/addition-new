@@ -117,11 +117,11 @@ const Navbar = ({ toggle }) => {
                 ALIANZAS
               </a>
             </Link>
-            {/* <Link href="/aprendizaje">
-              <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
+            <Link href="/bolsa-de-trabajo">
+              <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont ">
                 BOLSA DE TRABAJO
               </a>
-            </Link> */}
+            </Link>
             <Link href="/blog">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
                 BLOG
