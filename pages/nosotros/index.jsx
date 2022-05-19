@@ -104,7 +104,7 @@ const nosotros = () => {
         </div>
       </div>
     </section>
-    <section className="flex flex-row bg-[#A036AD] w-full h-[500px] px-16">
+    <section className="flex flex-row bg-[#A036AD] w-full h-[600px] px-16">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
             <h2 className="text-3xl text-white font-regular mb-4 self-start">
               {" "}
@@ -112,16 +112,35 @@ const nosotros = () => {
             </h2>
             <ol className="list-decimal w-full space-y-2">
               <li className="text-white">
-                Implementamos programas de <span className="font-bold">diversidad e inclusión</span> para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente.
-                <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015</span>
-                <span className="font-bold">Norma Oficial Mexicana NOM-035-STPS-2018</span>
-              </li>
+                Diversidad e inclusión </li>
+                <p className="text-white">Implementamos programas de <span className="font-bold">diversidad e inclusión</span> para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente. <br />
+                <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.
+                Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial
+                Distintivo Empresa Socialmente Responsable</span>
+                </p>
               <li className="text-white">
-                Estamos autorizados y cumplimos con todos los requisitos para ofrecer servicios especializados enfocados en enriquecer el personal de tu empresa. 
+                Gestión de recursos humanos 
               </li>
+              <p className="text-white">
+                Brindamos soluciones de gestión total o parcial en los procesos de Recursos Humanos. <br />
+                <span className="font-bold">
+                  Atracción y Selección de Talento Humano <br />
+                  Evaluación de Talento Humano y Organizacional <br />
+                  Servicios Especializados <br />
+                  Entrenamiento, Capacitación y Desarrollo <br />
+                </span>
+              </p>
               <li className="text-white">
-                Brindamos Servicios especializados con administración total y/o parcial de sus procesos de Recursos Humanos.
+                Coaching laboral
               </li>
+              <p className="text-white">
+                Acompañamos a las personas en la búsqueda de empleo para crecimiento personal, familiar y profesional. <br />
+              </p>
+              <span className="font-bold text-white">
+                Findy JOB <br />
+                Job first (Orientación vocacional) <br />
+                Outplacement <br />
+              </span>
             </ol>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">

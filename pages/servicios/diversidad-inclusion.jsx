@@ -23,7 +23,7 @@ const diversidadInclusion = () => {
     text: 'Certifícate en la Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.Reconoce a tu empresa como un centro de trabajo que cuenta con prácticas en materia de igualdad laboral y no discriminación,para favorecer el desarrollo integral de las y los trabajadores.',
     imageUrl: '/img/servicios/diversidad-inclusion.jpg',
     imageAlt: 'Custom image',
-    confirmButtonText: 'Contactanos',
+    confirmButtonText: 'Salir',
 })
 }
 
@@ -69,8 +69,7 @@ const diversidadInclusion = () => {
               Nuestro compromiso es crear un buen ambiente laboral dentro de las empresas, por lo que implementamos programas de <span className="font-bold">diversidad & inclusión</span>{' '}
               para mejorar la productividad de las organizaciones y el cumplimiento de la normatividad vigente.
               <br />
-              Apoyamos a las empresas a implementar mecanismos de denuncia por lo que 
-              contamos con un sistema para <span className="font-bold">prevenir, atender y sancionar prácticas de discriminación y violencia laboral. </span>
+              Apoyamos a las empresas a implementar mecanismos de denuncia por lo que podemos administrar sus sistema para <span className="font-bold">prevenir, atender y sancionar prácticas de discriminación y violencia laboral. </span>
             </p>
             <a href="#serviciosd">
             <button className="btn bg-[#A036AD] hover:bg-[#a159ab] tex-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
@@ -121,7 +120,7 @@ const diversidadInclusion = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Norma Oficial Mexicana NOM-035-STPS-2018
+                Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
                 Identifica, analiza y prevé <span className="font-bold">factores de riesgo psicosocial</span> en tu empresa y promueve un entorno organizacional favorable para tus trabajadores.
@@ -170,10 +169,10 @@ const diversidadInclusion = () => {
       </section>
       </section>
       </ScrollableAnchor>
-      <section className="h-[400px] flex flex-row">
+      <section className="h-[450px] flex flex-row">
       <div className="w-full md:w-1/2">
         <div
-          className="bg-no-repeat bg-cover relative h-[400px] flex items-center"
+          className="bg-no-repeat bg-cover relative h-[450px] flex"
           style={{
             backgroundImage: `url(/img/servicios/servicios-section.png)`,
           }}
@@ -184,16 +183,12 @@ const diversidadInclusion = () => {
           ¿Tu organización asume las normas sobre diversidad e inclusión?
         </h2>
         <p className="text-black w-4/5">
-          Con nuestra fórmula hemos participado en la asesoría y/o certificación de más de 2,879 empresas del sector público y privado. 
+          Con nuestra fórmula hemos participado en la asesoría, formación, y/o certificación de más de 2,879 empresas del sector público y privado. 
 
           Iniciamos con un <span className="font-bold">diagnóstico gratuito,</span>
-          medimos el <span className="font-bold">clima laboral, no discriminación y factores de riesgo psicosocial de tu organización,</span>
-          sensibilizamos y capacitamos a todos los integrantes de la empresa, asesoramos y hacemos ajustes en las políticas, procedimientos y estrategias de gestión. 
-
-          Apoyamos a tu empresa a implementar mecanismos de denuncia de <span className="font-bold">discriminación y violencia laboral. </span>
-
-
-¡Evalúate y certifícate! 
+          de igualdad laboral y no descriminación y/ <span className="font-bold">factores de riesgo psicosocial de tu organización.</span> Medimos el <span className="font-bold">clima laboral</span> sensibilizamos y capacitamos a todos los integrantes de la empresa, asesoramos y hacemos ajustes en las políticas, procedimientos y estrategias de gestión. <br />
+          Apoyamos a tu empresa a implementar mecanismos de denuncia de <span className="font-bold"> discriminación y violencia laboral. </span> <br /> <br />
+          ¡Evalúate y certifícate! 
         </p>
         <div className="w-4/5">
         <Link href="/contacto">

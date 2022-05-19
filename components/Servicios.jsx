@@ -19,7 +19,7 @@ const callServices = () => {
     <>
       {/* // ------------ Primer Servicio ------------ */}
       <section className="flex flex-row space-x-12 mt-5">
-        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[700px] w-[400px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -33,7 +33,11 @@ const callServices = () => {
                 Diversidad e Inclusión
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                  Implementamos programas de <span className="font-bold">diversidad e inclusión</span>  para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente.
+                <ul className=" pl-1 list-disc space-y-1">
+                  <li className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.</li>
+                  <li className="font-bold">Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial</li>
+                  <li className="font-bold">Distintivo Empresa Socialmente Responsable</li>
+                </ul>
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/diversidad-inclusion">
@@ -46,34 +50,7 @@ const callServices = () => {
           </div>
         </div>
         {/*--------- Segundo servicios -------*/}
-        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
-            <div className="p-6">
-              <Image
-                src="/img/servicios/servicios-especializados.jpg"
-                width={1200}
-                height={1200}
-                className="object-cover rounded-xl object-center"
-                alt="Aqui va el alt de la imagen"
-              />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Servicios Especializados
-              </h3>
-              <p className="leading-relaxed mb-3 text-justify">
-                Estamos autorizados y cumplimos con todos los requisitos para ofrecer servicios especializados enfocados en enriquecer el personal de su empresa.
-              </p>
-              <div className="flex items-center flex-wrap">
-                <Link href="/servicios/servicios-especializados">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
-                    Conoce más
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*--------- Tercer servicios -------*/}
-        <div className="h-[570px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[700px] w-[400px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -87,10 +64,44 @@ const callServices = () => {
                 Gestión de Recursos Humanos
               </h3>
               <p className="leading-relaxed mb-3 pb-6 text-justify">
-                Brindamos <span className="font-bold">Servicios Especializados</span> con administración total y/o parcial de sus procesos de <span className="font-bold">Recursos Humanos.</span>
+               Brindamos soluciones de gestión total o parcial en los procesos de Recursos Humanos <br />
+              <span className="font-bold"> Atracción y Selección de Talento Humano </span> <br />
+              <span className="font-bold"> Evaluación de Talento Humano y Organizacional </span> <br />
+              <span className="font-bold"> Servicios Especializados </span> <br />
+              <span className="font-bold"> Entrenamiento, Capacitación y Desarrollo </span> <br />
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/gestion-recursos-humanos">
+                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                    Conoce más
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*--------- Tercer servicios -------*/}
+        <div className="h-[700px] w-[400px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+            <div className="p-6">
+              <Image
+                src="/img/servicios/servicios-especializados.jpg"
+                width={1200}
+                height={1200}
+                className="object-cover rounded-xl object-center"
+                alt="Aqui va el alt de la imagen"
+              />
+              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+                Coaching laboral
+              </h3>
+              <p className="leading-relaxed mb-3 text-justify">
+                Acompañamos a las personas en la búsqueda de empleo para crecimiento personal, familiar y profesional. <br />
+              <span className="font-bold"> Evaluación de Talento Humano y Organizacional </span> <br />
+              <span className="font-bold"> Servicios Especializados </span> <br />
+              <span className="font-bold"> Entrenamiento, Capacitación y Desarrollo </span> <br />
+              </p>
+              <div className="flex items-center flex-wrap">
+                <Link href="/servicios/servicios-especializados">
                   <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
                     Conoce más
                   </button>

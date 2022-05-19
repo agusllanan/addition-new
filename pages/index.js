@@ -36,9 +36,9 @@ export default function Home() {
               <br /> <br />
               Somos la primera empresa de consultoría en{" "}
               <span className="font-bold">Recursos Humanos </span>en obtener la
-              certificación en la{" "}
+              certificación en la{" "} <br />
               <span className="font-bold">
-                Norma Mexicana en Igualdad Laboral y No Discriminación.
+                Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.
               </span>
             </p>
             <a href="#servicios">
@@ -96,30 +96,18 @@ export default function Home() {
         {/* Seccion de metodologia */}
         <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm px-10 ">
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center">
-            <h2 className="text-3xl text-[#9825A6] font-regular mb-4 self-start">
+            <h2 className="text-3xl text-[#9825A6] font-bold mb-4 self-start">
               {" "}
               Conoce nuestra <br />
               <span>metodología</span>
             </h2>
             <p className="text-base text-gray-600 w-4/5 py-3">
-              Sabemos que las personas que conforman tu empresa son cruciales
-              para su crecimiento. <br /> <br /> Estamos comprometidos a
-              ayudarte con la{" "}
-              <span className="font-bold">
-                motivación, retención y desarrollo de tu equipo de trabajo
-              </span>{" "}
-              basado en una{" "}
-              <span className="font-bold">cultura de respeto</span> y de{" "}
-              <span className="font-bold">diversidad e inclusión</span> para el
-              crecimiento de tu empresa. <br />
-              <br /> Addition ocupa el lugar 13 a nivel nacional dentro de las
-              50 mejores empresas de consultoría en{" "}
-              <span className="font-bold">Recursos Humanos,</span> de acuerdo
-              con el ranking de la Revista Consultoría y el lugar No.40 de las
-              mejores empresas de{" "}
-              <span className="font-bold">
-                consultoría Administrativa y de Gestión.
-              </span>{" "}
+              ¡Nos preocupamos por las personas que forman tu empresa!<br /> <br />
+              Con más de 20 años de experiencia, hemos ayudado a empresas nacionales y transnacionales, a través de la implementación de sistemas que promueven la <span className="font-bold"> inclusión y permanencia laboral </span> ofreciendo soluciones a la medida de cada uno de nuestros clientes. <br /> <br />
+              Con nuestra formula hemos participado en asesoría, formación, y/o certificación de más de 2,879 empresas del sector público y privado. <br /> <br />
+              Siendo “Agente Capacitador” en temas de <span className="font-bold"> desarrollo, derechos humanos, hostigamiento y acoso, igualdad laboral, violencia laboral y no discriminación </span> ante la STPS. <br /> <br />
+              Contamos con un equipo de asesores con certificaciones internacionales en temas de <span className="font-bold"> Equidad de Género.</span> <br /> <br />
+              ¡Transforma tu empresa!
             </p>
             <Link href="/nosotros/#aqui">
             <button className="text-white rounded-3xl py-2 px-6 bg-[#9825A6] hover:bg-[#ce84d8] my-2">

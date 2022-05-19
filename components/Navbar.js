@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Menu.Items className="origin-top-right absolute right-72 top-[70px] mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center"> 
+              <Menu.Items className="absolute top-[70px] mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center"> 
                     <Menu.Item>
                       {({ active }) => (
                         <button
@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
                             active
                               ? "bg-brink-pink-200 text-brink-pink-600"
                               : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          } group flex rounded-md items-center w-full py-2 text-sm`}
                         >
                           <Link href="/servicios/gestion-recursos-humanos">
                             Gestión de Recursos Humanos
@@ -118,7 +118,7 @@ const Navbar = ({ toggle }) => {
               </a>
             </Link>
             <Link href="/bolsa-de-trabajo">
-              <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont ">
+              <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont whitespace-nowrap">
                 BOLSA DE TRABAJO
               </a>
             </Link>
@@ -133,10 +133,10 @@ const Navbar = ({ toggle }) => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-1"
                   viewBox="0 0 24 24"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
