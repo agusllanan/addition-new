@@ -32,7 +32,7 @@ const callServices = () => {
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
                 Diversidad e Inclusión
               </h3>
-              <p className="leading-relaxed mb-3 text-justify">
+              <p className="leading-relaxed mb-3 text-justify pb-1">
                 <ul className=" pl-1 list-disc space-y-1">
                   <li className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.</li>
                   <li className="font-bold">Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial</li>
@@ -41,7 +41,7 @@ const callServices = () => {
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/diversidad-inclusion">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250 mt-10">
                     Conoce más
                   </button>
                 </Link>
@@ -63,7 +63,7 @@ const callServices = () => {
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
                 Gestión de Recursos Humanos
               </h3>
-              <p className="leading-relaxed mb-3 pb-6 text-justify">
+              <p className="leading-relaxed mb-3 pb-1 text-justify">
                Brindamos soluciones de gestión total o parcial en los procesos de Recursos Humanos <br />
               <span className="font-bold"> Atracción y Selección de Talento Humano </span> <br />
               <span className="font-bold"> Evaluación de Talento Humano y Organizacional </span> <br />

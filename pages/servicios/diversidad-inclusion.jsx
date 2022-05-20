@@ -186,7 +186,7 @@ const diversidadInclusion = () => {
           Con nuestra fórmula hemos participado en la asesoría, formación, y/o certificación de más de 2,879 empresas del sector público y privado. 
 
           Iniciamos con un <span className="font-bold">diagnóstico gratuito,</span>
-          de igualdad laboral y no descriminación y/ <span className="font-bold">factores de riesgo psicosocial de tu organización.</span> Medimos el <span className="font-bold">clima laboral</span> sensibilizamos y capacitamos a todos los integrantes de la empresa, asesoramos y hacemos ajustes en las políticas, procedimientos y estrategias de gestión. <br />
+          de igualdad laboral y no descriminación y/ <span className="font-bold">factores de riesgo psicosocial de tu organización. <br /> </span> Medimos el <span className="font-bold">clima laboral</span> sensibilizamos y capacitamos a todos los integrantes de la empresa, asesoramos y hacemos ajustes en las políticas, procedimientos y estrategias de gestión. <br />
           Apoyamos a tu empresa a implementar mecanismos de denuncia de <span className="font-bold"> discriminación y violencia laboral. </span> <br /> <br />
           ¡Evalúate y certifícate! 
         </p>

@@ -9,13 +9,13 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 configureAnchors({offset: -45, scrollDuration: 1000})
 
-const serviciosEspecializados = () => {
+const coachingLaboral = () => {
   const MySwal = withReactContent(Swal)
 
   return (
     <Layout>
         <Head>
-        <title>Addition - Servicios Especializados</title>
+        <title>Addition - Coaching Laboral</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main>
@@ -26,13 +26,22 @@ const serviciosEspecializados = () => {
           }}
         >
           <div className="glass font-comm h-auto my-32  m-auto md:ml-[50px]">
-            <h2 className="text-gray-700 py-12 text-center text-3xl font-medium">
-            Servicios Especializados
+            <h2 className="text-gray-700 py-6 text-center text-3xl font-medium">
+            Coaching Laboral
             </h2>
             <p className="text-gray-700 text-lg mx-10 text-justify">
-              ¡En Addition evolucionamos a un modelo de <span className="font-bold">servicios especializados!</span>
-
-              Estamos autorizados y cumplimos con todos los requisitos para ofrecer <span className="font-bold">Servicios Especializados</span> enfocados en enriquecer al personal de tu empresa para que logres alcanzar objetivos administrativos, comerciales y de innovación.
+              Acompañamos a las personas en la búsqueda de empleo para crecimiento personal, familiar y profesional. <br /><br />
+              <ol className="list-decimal w-full space-y-2 pl-4">
+                <li className="font-bold">
+                  Findy JOB
+                </li>
+                <li className="font-bold">
+                  Job first (Orientación vocacional)
+                </li>
+                <li className="font-bold">
+                  Outplacement
+                </li>
+              </ol>
             </p>
             <a href="#serviciose">
             <button className="btn bg-[#FE6472] hover:bg-opacity-90 border-[#FE6472] text-white px-8 py-4 animate-none mt-8 mb-4 ml-10">
@@ -56,11 +65,25 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Addition Back Office Administrativo
+                Findy JOB
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Ofrecemos <span className="font-bold">soluciones profesionales</span> que optimizan los procesos contables, legales, comerciales y administrativos de tu empresa para mejorar la productividad y cumplimiento de los objetivos de esta.
+                Acompañamiento integral con nuestros equipo expertos en la búsqueda de empleo; haciendo frente a los procesos de selección actuales.
               </p>
+              <ol className="list-decimal w-full space-y-2 pl-4">
+                <li className="font-bold">
+                  identificación de potencial y objetivos individuales.
+                </li>
+                <li className="font-bold">
+                  Definición estrategia.
+                </li>
+                <li className="font-bold">
+                  Estrategia para entrevistas de impacto.
+                </li>
+                <li className="font-bold">
+                  Implementación de la Búsqueda.
+                </li>
+              </ol>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="/contacto">
                   <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
@@ -74,7 +97,7 @@ const serviciosEspecializados = () => {
         </div>
         {/*--------- Segundo servicios -------*/}
         <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/especializados/personas.png"
@@ -84,14 +107,14 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Addition IT Technology
+                Job first (Orientación vocacional)
               </h3>
-              <p className="leading-relaxed mb-3.5 text-justify pb-6">
-                Contamos con un <span className="font-bold">soporte profesional especializado</span> en programación, implementación, diseño, asesoría y servicios de internet.
+              <p className="leading-relaxed mb-3.5 text-justify pb-8">
+                Creemos que la juventud es el legado más valioso por eso los apoyamos en la busqueda de su primer trabajo.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="/contacto">
-                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
+                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250 mt-40"
                   >
                     Contáctanos
                   </button>
@@ -102,7 +125,7 @@ const serviciosEspecializados = () => {
         </div>
         {/*--------- Tercer servicios -------*/}
         <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
                 src="/img/especializados/sonrisa.png"
@@ -112,14 +135,14 @@ const serviciosEspecializados = () => {
                 alt="Aqui va el alt de la imagen"
               />
               <h3 className="title-font text-lg font-medium text-gray-900 my-3">
-                Addition personal de Marketing
+                Outplacement
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                Brindamos <span className="font-bold">soluciones especializadas</span> en el área de mercadotecnia, publicidad y actividades relacionadas, ayudando a nuestros clientes a impulsar sus ventas y hacer crecer tu negocio.
+                Desvinculación de personal. Desarrollamos efectivos programas para mejorar la imagen interna y externa de su organización una vez que se decide que la persona dejará la compañía.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="/contacto">
-                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250"
+                  <button className="btn-servicios bg-[#FE6472] hover:text-[#FE6472] border-[#FE6472] transition ease-in duration-250 mt-36"
                   >
                     Contáctanos
                   </button>
@@ -220,4 +243,4 @@ const serviciosEspecializados = () => {
   )
 }
 
-export default serviciosEspecializados
+export default coachingLaboral

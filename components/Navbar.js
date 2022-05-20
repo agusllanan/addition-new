@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Menu.Items className="absolute top-[70px] mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center"> 
+              <Menu.Items className="absolute right-[450px] top-[70px] mt-2 flex flex-col z-20 w-auto h-auto rounded-md shadow-xl bg-white ring-1 ring-brink-pink-600 ring-opacity-5 focus:outline-none justify-center p-2"> 
                     <Menu.Item>
                       {({ active }) => (
                         <button
@@ -89,23 +89,23 @@ const Navbar = ({ toggle }) => {
                               : "text-brink-pink-600"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/servicios/servicios-especializados">
-                            Servicios Especializados
+                          <Link href="/servicios/gestion-recursos-humanos">
+                             Gestión de Recursos Humanos
                           </Link>
                         </button>
                       )}
                     </Menu.Item>
-                    <Menu.Item>
+                                        <Menu.Item>
                       {({ active }) => (
                         <button
                           className={`${
                             active
                               ? "bg-brink-pink-200 text-brink-pink-600"
                               : "text-brink-pink-600"
-                          } group flex rounded-md items-center w-full py-2 text-sm`}
+                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                         >
-                          <Link href="/servicios/gestion-recursos-humanos">
-                            Gestión de Recursos Humanos
+                          <Link href="/servicios/coaching-laboral">
+                            Coaching Laboral
                           </Link>
                         </button>
                       )}

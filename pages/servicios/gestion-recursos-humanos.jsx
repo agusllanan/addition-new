@@ -62,6 +62,20 @@ const callServicesE = () => {
 })
 }
 
+const callServicesSE = () => {
+  Swal.fire({
+    imageUrl: '/img/gestion/entrenamiento.png',
+    title: 'Servicios Especializados',
+  html:
+    '<p>La capacitación y desarrollo del personal de tu empresa es básico para el crecimiento de esta. <br/> En Addition, contamos con diferentes metodologías de capacitación y desarrollo para el crecimiento de tu organización.</p><br /> <ul class="w-full"><li class="text-[#12B0F4]">Team Building</li><li class="text-[#12B0F4]">Capacitación tradicional</li><li class="text-[#12B0F4]">Diseño de Programas de Coaching</li></ul>' ,
+  showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: true,
+  confirmButtonText:
+    'Salir',
+})
+}
+
   return (
     <Layout>
         <Head>
@@ -80,7 +94,7 @@ const callServicesE = () => {
             Gestión de Recursos Humanos
             </h2>
             <p className="text-gray-700 text-lg mx-10 text-justify">
-              Conocemos la importancia de la gestión del personal para tu empresa, por lo que brindamos servicios especializados con administración total y/o parcial de sus procesos de Recursos Humanos. <br />
+              Conocemos la importancia de la gestión del personal para tu empresa, por lo que brindamos soluciones de gestión total o parcial de sus procesos de Recursos Humanos. <br />
               Te ayudamos a mejorar y gestionar tu plantilla laboral con la atracción y <span className="font-bold">selección, evaluación, entrenamiento, capacitación y desarrollo de talento humano</span> dentro de tu organización para que puedas concentrarte en las tareas más importantes para el crecimiento de tu empresa.
             </p>
             <a href="#serviciosg">
@@ -164,12 +178,49 @@ const callServicesE = () => {
                 Entrenamiento, Capacitación y Desarrollo <span className=" text-sm">(virtual y presencial) </span> 
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
-                La capacitación y desarrollo del personal de tu empresa es básico para el crecimiento de esta. 
-              
+                La capacitación y desarrollo del personal de tu empresa es básico para el crecimiento de esta.
               </p>
               <div className="flex items-center justify-end flex-wrap">
                   <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250"
                   onClick={() => callServicesE()}
+                  >
+                    Conoce más
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/*--------- Cuarto servicios -------*/}
+        <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <div className="shadow-lg h-full border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+            <div className="p-6">
+              <Image
+                src="/img/gestion/entrenamiento.png"
+                width={600}
+                height={400}
+                className="object-cover rounded-xl object-center"
+                alt="Aqui va el alt de la imagen"
+              />
+              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+                Servicios especializados 
+              </h3>
+              <p className="leading-relaxed mb-3 text-justify">
+                ¡En Addition evolucionamos a un modelo de <span className="font-bold">servicios especializados! </ span>
+              </p>
+              <ol className="list-decimal w-full space-y-2 pl-4">
+                <li className="font-bold">
+                  Addition Back Office Administrativo
+                </li>
+                <li className="font-bold">
+                  Addition IT Technology
+                </li>
+                <li className="font-bold">
+                  Addition personal de Marketing
+                </li>
+              </ol>
+              <div className="flex items-center justify-end flex-wrap">
+                  <button className="btn-servicios bg-[#12B0F4] hover:text-[#12B0F4] border-[#12B0F4] transition ease-in duration-250"
+                  onClick={() => callServicesSE()}
                   >
                     Conoce más
                   </button>
