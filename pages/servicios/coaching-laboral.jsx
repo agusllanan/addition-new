@@ -54,35 +54,35 @@ const coachingLaboral = () => {
         <section className="bg-gradient-to-l from-[#FD1593] to-[#FFFF33] items-center py-12 flex flex-col justify-center font-comm">
           <h2 className="text-white text-3xl mb-4">Servicios Especializados</h2>
           <section className="flex flex-row space-x-12 mt-5">
-        <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
-            <div className="p-6">
-              <Image
-                src="/img/especializados/manos.png"
-                width={600}
-                height={400}
-                className="object-cover rounded-xl object-center"
-                alt="Aqui va el alt de la imagen"
-              />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+            <div className="h-auto w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <div className="shadow-lg border-gray-200 border-opacity-60 rounded-lg overflow-hidden font-comm">
+                <div className="p-6">
+                  <Image
+                  src="/img/especializados/manos.png"
+                  width={600}
+                  height={400}
+                  className="object-cover rounded-xl object-center"
+                  alt="Aqui va el alt de la imagen"
+                  />
+                <h3 className="title-font text-lg font-medium text-gray-900 my-3">
                 Findy JOB
-              </h3>
-              <p className="leading-relaxed mb-3 text-justify">
+                </h3>
+                <p className="leading-relaxed mb-3 text-justify">
                 Acompañamiento integral con nuestros equipo expertos en la búsqueda de empleo; haciendo frente a los procesos de selección actuales.
-              </p>
-              <ol className="list-decimal w-full space-y-2 pl-4">
-                <li className="font-bold">
+                </p>
+                <ol className="list-decimal w-full space-y-2 pl-4">
+                  <li className="font-bold">
                   identificación de potencial y objetivos individuales.
-                </li>
-                <li className="font-bold">
-                  Definición estrategia.
-                </li>
-                <li className="font-bold">
-                  Estrategia para entrevistas de impacto.
-                </li>
-                <li className="font-bold">
-                  Implementación de la Búsqueda.
-                </li>
+                  </li>
+                  <li className="font-bold">
+                    Definición estrategia.
+                  </li>
+                  <li className="font-bold">
+                    Estrategia para entrevistas de impacto.
+                  </li>
+                  <li className="font-bold">
+                    Implementación de la Búsqueda.
+                  </li>
               </ol>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="/contacto">
@@ -165,7 +165,7 @@ const coachingLaboral = () => {
       </div>
       <div className="bg-white flex flex-col justify-center space-y-7 items-center w-1/2 font-comm">
         <h2 className="text-[#FE6472] text-2xl w-4/5">
-          Servicios Especializados
+          Coaching Laboral
         </h2>
         <p className="text-black w-4/5">
           En Addition pensamos en ti y en las necesidades específicas de tu empresa, por eso, evolucionamos y te ofrecemos un modelo de <span className="font-bold">soporte profesional especializado</span> que ayude a tu organización a gestionar áreas y procesos de suma importancia en tu empresa para que tú puedas enfocarte en el crecimiento y desarrollo de esta.
