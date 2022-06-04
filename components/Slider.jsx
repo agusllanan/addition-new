@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image"
 
 export default function SimpleSlider() {
-  var settings = {
+  const settings = {
       className: "center",
       centerMode: true,
       infinite: true,
@@ -13,7 +13,7 @@ export default function SimpleSlider() {
       slidesToShow: 1,
       speed: 500,
       swipeToSlide: true,
-  };
+  }
   return (
     <Slider className="flex " {...settings}>
       <div className="p-6">

@@ -41,16 +41,17 @@ const nosotros = () => {
           }}
       />
       </div>
-      <div className="bg-[#EA5076] flex flex-col justify-center space-y-7 items-center w-2/3 font-comm py-6">
+      <div className="bg-[#EA5076] flex flex-col justify-center space-y-2 items-center w-2/3 font-comm py-6">
         <h2 className="text-white text-2xl w-4/5">
           Acerca de Lihuba Vences
         </h2>
+        <h3 className="text-white text-xl font-bold font-sans w-4/5">CEO de Addition Human Resources</h3>
         <p className="text-white w-4/5">
         Psicóloga egresada de la Universidad Nacional Autónoma de México especializada en el área laboral y desarrollo organizacional, con <span className="font-bold">certificaciones para asesorar y auditar programas de género para erradicar la discriminación y contribuir a la igualdad de oportunidades. </span> <br /> <br />
 
         <span className="font-bold">Cuenta con capacitación en el desarrollo de competencias de Ombudsperson Organizacional,</span> Coach e instructora de diversos temas; recursos humanos, sistemas de gestión, derechos humanos, hostigamiento y acoso, igualdad laboral, violencia laboral y no discriminación.<br /> <br />
 
-        Fundó <span className="font-bold">Addition Human Resources</span> con el propósito de optimizar el cumplimiento de los objetivos estratégicos de las empresas, a través, del establecimiento de planes y estrategias de motivación, retención y desarrollo de Capital Humano, enfocados a atender la diversidad e inclusion de las personas.<br /> <br />
+        Fundó <span className="font-bold">Addition Human Resources</span> con el propósito de optimizar el cumplimiento de los objetivos estratégicos de las empresas, a través, del establecimiento de planes y estrategias de motivación, retención y desarrollo de Capital Humano, enfocados a atender la diversidad e inclusión de las personas.<br /> <br />
 
         Ha apoyado de manera parcial o integral a más de 2000 empresas en sus procesos de gestión de Recursos Humanos, cuenta con experiencia en formación, procesos de auditoría y asesoría para la acreditación, certificación y re - certificación de Distintivos de Género,  Discriminación, <span className="font-bold">Diversidad & Inclusión;</span> incluyendo la <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y no Discriminación, y Norma Oficial Mexicana NOM-035-STPS- Factores de riesgo psicosocial</span> Identificación, análisis, prevención y distintivos de la Secretaria de Trabajo y Previsión Social.
         </p>
@@ -104,7 +105,7 @@ const nosotros = () => {
         </div>
       </div>
     </section>
-    <section className="flex flex-row bg-[#A036AD] w-full h-[600px] px-16">
+    <section className="flex flex-row bg-[#A036AD] w-full h-[650px] px-16">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
             <h2 className="text-3xl text-white font-regular mb-4 self-start">
               {" "}
@@ -113,34 +114,34 @@ const nosotros = () => {
             <ol className="list-decimal w-full space-y-2">
               <li className="text-white">
                 Diversidad e inclusión </li>
-                <p className="text-white">Implementamos programas de <span className="font-bold">diversidad e inclusión</span> para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente. <br />
-                <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.
-                Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial
-                Distintivo Empresa Socialmente Responsable</span>
-                </p>
+                <p className="text-white">Implementamos programas de <span className="font-bold">diversidad e inclusión</span> para mejorar la productividad de las organizaciones y cumplimiento de la normatividad vigente.</p>
+                <ol className="w-full pl-4 list-disc text-white">
+                  <li className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.</li>
+                  <li>Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial</li>
+                  <li>Distintivo Empresa Socialmente Responsable</li>
+                </ol>
               <li className="text-white">
                 Gestión de recursos humanos 
               </li>
               <p className="text-white">
-                Brindamos soluciones de gestión total o parcial en los procesos de Recursos Humanos. <br />
-                <span className="font-bold">
-                  Atracción y Selección de Talento Humano <br />
-                  Evaluación de Talento Humano y Organizacional <br />
-                  Servicios Especializados <br />
-                  Entrenamiento, Capacitación y Desarrollo <br />
-                </span>
-              </p>
+                Brindamos soluciones de gestión total o parcial en los procesos de Recursos Humanos.</p>
+                <ol className="w-full pl-4 list-disc font-bold text-white">
+                  <li>Atracción y Selección de Talento Humano</li>
+                  <li>Evaluación de Talento Humano y Organizacional</li>
+                  <li>Servicios Especializados</li>
+                  <li>Entrenamiento, Capacitación y Desarrollo</li>
+                </ol>
               <li className="text-white">
                 Coaching laboral
               </li>
               <p className="text-white">
                 Acompañamos a las personas en la búsqueda de empleo para crecimiento personal, familiar y profesional. <br />
               </p>
-              <span className="font-bold text-white">
-                Findy JOB <br />
-                Job first (Orientación vocacional) <br />
-                Outplacement <br />
-              </span>
+              <ol className="w-full pl-4 list-disc font-bold text-white">
+                <li>Findy JOB</li>
+                <li>Job first (Orientación vocacional)</li>
+                <li>Outplacement</li>
+              </ol>
             </ol>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
@@ -186,35 +187,37 @@ const nosotros = () => {
             <div className="absolute top-32 grid grid-cols-4 grid-rows-2 gap-4 gap-x-40 z-10 -m-10">
               <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
                 <FontAwesomeIcon icon={faUsers} className="text-[#69C6FA] text-5xl" />
-                <p className="w-3/4">Diversidad e inclusion</p>
+                <p>Equidad</p>
               </div>
               <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
               <FontAwesomeIcon icon={faBalanceScale} className="text-[#69C6FA] text-5xl"/>
-              <p> Equidad </p>
+              <p> Compromiso </p>
               </div>
               <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
               <FontAwesomeIcon icon={faHandshake} className="text-[#69C6FA] text-5xl"/><p>
-                Respeto
-              </p></div>
-              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
-              <FontAwesomeIcon icon={faPeopleArrows} className="text-[#69C6FA] text-5xl"/><p>
-                Compromiso
-              </p></div>
-              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
-              <FontAwesomeIcon icon={faHandHoldingHeart} className="text-[#69C6FA] text-5xl"/><p>
-                Enfoque al cliente
-              </p></div>
-              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
-                <FontAwesomeIcon icon={faHeart} className="text-[#69C6FA] text-5xl"/>
-                <p className="w-3/4 text-center ">Pertenecia</p>
-              </div>
-              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
-              <FontAwesomeIcon icon={faUserPlus} className="text-[#69C6FA] text-5xl"/><p>
                 Trabajo en equipo
               </p></div>
               <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
+              <FontAwesomeIcon icon={faPeopleArrows} className="text-[#69C6FA] text-5xl"/><p>
+                Orientado al cliente
+              </p></div>
+              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
+              <FontAwesomeIcon icon={faHandHoldingHeart} className="text-[#69C6FA] text-5xl"/><p>
+                Congruencia
+              </p></div>
+              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
+                <FontAwesomeIcon icon={faHeart} className="text-[#69C6FA] text-5xl"/>
+                <p className="w-3/4 text-center ">
+                  Flexibilidad
+                </p>
+              </div>
+              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
+              <FontAwesomeIcon icon={faUserPlus} className="text-[#69C6FA] text-5xl"/><p>
+                Trato personal
+              </p></div>
+              <div className="bg-white h-[150px] w-[150px] rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 hover:shadow-2xl hover:text-[#4ab5f3]">
               <FontAwesomeIcon icon={faArrowsAltV} className="text-[#69C6FA] text-5xl"/><p>
-                Flexibilidad
+                Profesionalismo
               </p></div>
             </div>
           </div>

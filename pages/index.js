@@ -5,9 +5,22 @@ import Link from "next/link";
 import Servicios from "../components/Servicios";
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { configureAnchors } from 'react-scrollable-anchor'
-
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 export default function Home() {
+
+  const settings = {
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "",
+      slidesToShow: 1,
+      speed: 500,
+      swipeToSlide: true,
+  }
+
   configureAnchors({offset: 28, scrollDuration: 1000})
   return (
     <Layout>
@@ -22,10 +35,11 @@ export default function Home() {
             backgroundImage: `url(/img/portada/imagen-portada.png)`,
           }}
         >
-          <section className="glass font-comm h-[450px] m-auto md:ml-[50px]">
+          <section className="glass font-comm h-[500px] m-auto md:ml-[50px]">
             <h2 className="text-gray-700 pt-8 pb-6 text-center text-3xl font-medium">
-              ¿Tu organización asume las normas sobre diversidad e inclusión?{" "}
+              La diversidad e inclusión enriquece a tu organización{" "}
             </h2>
+            <h3 className="text-center text-xl">¿Tu organización promueve ambientes de diversidad e inclusión?</h3> <br />
             <p className="text-gray-700 text-lg mx-10 text-justify">
               Más de 20 años de experiencia haciendo trascender a empresas
               nacionales y transnacionales, a través de la implementación de
@@ -89,7 +103,7 @@ export default function Home() {
         </section>
         <ScrollableAnchor id={'servicios'}>
         <section className="bg-[#EA5076] items-center py-12 flex flex-col justify-center font-comm">
-          <h2 className="text-white text-3xl mb-4">Nuestros Servicios</h2>
+          <h2 className="text-white text-3xl mb-4">Nuestras Soluciones </h2>
           <Servicios />
         </section>
         </ScrollableAnchor>
@@ -98,11 +112,10 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center">
             <h2 className="text-3xl text-[#9825A6] font-bold mb-4 self-start">
               {" "}
-              Conoce nuestra <br />
-              <span>metodología</span>
-            </h2>
+              ¡Nos preocupamos por las personas <br />
+              <span>que forman tu empresa!</span>
+            </h2><br />
             <p className="text-base text-gray-600 w-4/5 py-3">
-              ¡Nos preocupamos por las personas que forman tu empresa!<br /> <br />
               Con más de 20 años de experiencia, hemos ayudado a empresas nacionales y transnacionales, a través de la implementación de sistemas que promueven la <span className="font-bold"> inclusión y permanencia laboral </span> ofreciendo soluciones a la medida de cada uno de nuestros clientes. <br /> <br />
               Con nuestra formula hemos participado en asesoría, formación, y/o certificación de más de 2,879 empresas del sector público y privado. <br /> <br />
               Siendo “Agente Capacitador” en temas de <span className="font-bold"> desarrollo, derechos humanos, hostigamiento y acoso, igualdad laboral, violencia laboral y no discriminación </span> ante la STPS. <br /> <br />
@@ -129,7 +142,7 @@ export default function Home() {
           <div className="flex flex-wrap text-center font-jost divide-x-2 divide-white">
             <div className="py-10 w-1/3">
               <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
-                +12
+                +20
               </h3>
               <p className="leading-relaxed font-regular text-base text-black">
                 AÑOS DE EXPERIENCIA
@@ -137,18 +150,18 @@ export default function Home() {
             </div>
             <div className="py-10 w-1/3">
               <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
-                +100
+                +40.000
               </h3>
               <p className="leading-relaxed font-regular text-base text-black">
-                Clientes Satisfechos
+                personas por año impactadas
               </p>
             </div>
             <div className="py-10 w-1/3">
               <h3 className="title-font font-bold md:text-6xl text-3xl text-black">
-                +80
+                +2000
               </h3>
               <p className="leading-relaxed font-regular text-base text-black">
-                Empresas impactadas
+                Empresas satisfechas
               </p>
             </div>
           </div>
@@ -200,7 +213,7 @@ export default function Home() {
           </div>
           <div className="w-3/4 flex flex-col items-end px-10 font-comm justify-center">
             <h3 className="w-1/2 text-3xl text-[#69C6FA] py-10">
-              Alianzas y casos de éxito
+              Casos de éxito
             </h3>
             <p className="w-1/2 py-5 pr-10">
               Para Addition, la unión hace la fuerza. <br /> <br />
@@ -226,26 +239,29 @@ export default function Home() {
             </h3>
           </div>
           <div className="flex flex-row space-x-10 w-5/6 mx-auto">
-            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-2 p-4">
                 <p className="">
                   “Somos una empresa transnacional con representación en México. Addition nos ha brindado asesoría integral en la <span className="font-bold">gestión de nuestro personal,</span> Addition es reconocido internamente en nuestra organización por otros países, como parte del éxito de los resultados en el crecimiento de la operación en México”.
                 </p>
+                <p className="text-base text-[#69A3A2]">David, Manager, Billing Services</p>
                 <p className="text-base text-[#69A3A2]">
                   MARKEN a UPS company 
                 </p>
             </div>
-            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-2 p-4">
                 <p className="">
                   “Somos una Firma comprometida con la <span className="font-bold">inclusión y la diversidad,</span> por esto, decidimos apoyarnos de Addition para obtener la certificación en la <span className="font-bold">Norma de Igualdad Laboral y no Discriminación,</span> quienes nos asesoraron en materia de interpretación e integración de evidencias. Agradecemos su apoyo para cumplir con dicho objetivo.”
                 </p>
+                <p className="text-base text-[#69A3A2]">Ruth Sanders Inclusión, Diversidad y Equidad</p>
                 <p className="text-base text-[#69A3A2]">
                   KPMG 
                 </p>
             </div>
-            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-5 p-4">
+            <div className="shadow-lg border-gray-200 bg-white border-opacity-60 rounded-lg overflow-hidden font-comm w-1/3 space-y-2 p-4">
                 <p className="">
                   “Somos una empresa donde la <span className="font-bold">seguridad e integridad de nuestros colaboradores</span> es de suma importancia por las actividades que desempeñan, Addition nos asesoró para implementar la <span className="font-bold">Nom 035,</span> alineando el cumplimiento de esta norma a otras que estamos obligados a atender por el giro de nuestro negocio.”
                 </p>
+                <p className="text-base text-[#69A3A2]">Gabriela Esquivel, Gerente de EHS</p>
                 <p className="text-base text-[#69A3A2]">
                   ADT 
                 </p>

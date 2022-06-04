@@ -96,13 +96,13 @@ const callServices = () => {
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
                 Acompañamos a las personas en la búsqueda de empleo para crecimiento personal, familiar y profesional. <br />
-              <span className="font-bold"> Evaluación de Talento Humano y Organizacional </span> <br />
-              <span className="font-bold"> Servicios Especializados </span> <br />
-              <span className="font-bold"> Entrenamiento, Capacitación y Desarrollo </span> <br />
+              <span className="font-bold"> Findy Job </span> <br />
+              <span className="font-bold"> Job first (Orientación vocacional) </span> <br />
+              <span className="font-bold"> Outplacement </span> <br />
               </p>
               <div className="flex items-center flex-wrap">
                 <Link href="/servicios/coaching-laboral">
-                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500  py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250">
+                  <button className="inline-flex text-brink-pink-500 font-bold border-2 border-brink-pink-500 py-2 px-6 focus:outline-none hover:bg-brink-pink-500 hover:text-white rounded text-lg transition ease-in duration-250 mt-8">
                     Conoce más
                   </button>
                 </Link>

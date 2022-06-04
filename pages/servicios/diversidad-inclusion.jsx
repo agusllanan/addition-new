@@ -82,7 +82,7 @@ const diversidadInclusion = () => {
         <section className="bg-gradient-to-tl from-[#5900B1] to-[#FD1593] items-center py-12 flex flex-col justify-center font-comm">
           <h2 className="text-white text-3xl mb-4">Servicios en Diversidad e Inclusión</h2>
           <section className="flex flex-row space-x-12 mt-5">
-        <div className="h-[600px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[620px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -92,14 +92,14 @@ const diversidadInclusion = () => {
                 className="object-cover rounded-xl object-center"
                 alt="Aqui va el alt de la imagen"
               />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+              <h3 className="title-font text-lg font-bold text-gray-900 my-3">
                 Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y no Discriminación<n></n>
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
                 Certifícate en la <span className="font-bold">Norma Mexicana NMX-R-025-SCFI-2015 en Igualdad Laboral y No Discriminación.</span>
               </p>
               <div className="flex items-center justify-end flex-wrap">                
-                  <button className="btn-servicios transition ease-in duration-250"
+                  <button className="btn-servicios transition mt-8 ease-in duration-250"
                   onClick={() => callServices1()}
                   >
                     Conoce más
@@ -109,7 +109,7 @@ const diversidadInclusion = () => {
           </div>
         </div>
         {/*--------- Segundo servicios -------*/}
-        <div className="h-[600px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[620px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -119,7 +119,7 @@ const diversidadInclusion = () => {
                 className="object-cover rounded-xl object-center"
                 alt="Aqui va el alt de la imagen"
               />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+              <h3 className="title-font text-lg font-bold text-gray-900 my-3">
                 Norma Oficial Mexicana NOM-035-STPS-2018 de factores de riesgo psicosocial
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
@@ -138,7 +138,7 @@ const diversidadInclusion = () => {
           </div>
         </div>
         {/*--------- Tercer servicios -------*/}
-        <div className="h-[600px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-[620px] w-[350px] border-2 shadow-lg bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <div className="shadow-lg border-gray-200 h-full border-opacity-60 rounded-lg overflow-hidden font-comm">
             <div className="p-6">
               <Image
@@ -148,7 +148,7 @@ const diversidadInclusion = () => {
                 className="object-cover rounded-xl object-center"
                 alt="Aqui va el alt de la imagen"
               />
-              <h3 className="title-font text-lg font-medium text-gray-900 my-3">
+              <h3 className="title-font text-lg font-bold text-gray-900 my-3">
                 Distintivo de Empresa Socialmente Responsable
               </h3>
               <p className="leading-relaxed mb-3 text-justify">
@@ -156,7 +156,7 @@ const diversidadInclusion = () => {
               </p>
               <div className="flex items-center justify-end flex-wrap">
                 <Link href="#">
-                  <button className="btn-servicios mt-6 transition ease-in duration-250"
+                  <button className="btn-servicios mt-12 transition ease-in duration-250"
                   onClick={() => callServices3()}
                   >
                     Conoce más
@@ -184,7 +184,6 @@ const diversidadInclusion = () => {
         </h2>
         <p className="text-black w-4/5">
           Con nuestra fórmula hemos participado en la asesoría, formación, y/o certificación de más de 2,879 empresas del sector público y privado. 
-
           Iniciamos con un <span className="font-bold">diagnóstico gratuito,</span>
           de igualdad laboral y no descriminación y/ <span className="font-bold">factores de riesgo psicosocial de tu organización. <br /> </span> Medimos el <span className="font-bold">clima laboral</span> sensibilizamos y capacitamos a todos los integrantes de la empresa, asesoramos y hacemos ajustes en las políticas, procedimientos y estrategias de gestión. <br />
           Apoyamos a tu empresa a implementar mecanismos de denuncia de <span className="font-bold"> discriminación y violencia laboral. </span> <br /> <br />

@@ -21,7 +21,7 @@ const gestionRecursosHumanos = () => {
   imageUrl: '/img/gestion/proyecto.png',
   title: 'Evaluación de Talento Humano y Organizacional',
   html:
-    '<p>Fortalece los procesos internos de tu organización con nuestras evaluaciones y diagnóstico. </p><br /> <ul class="w-full"><li class="text-[#12B0F4]">Assessment Center</li><li class="text-[#12B0F4]">Evaluación Psicométrica y Proyectiva</li><li class="text-[#12B0F4]">Evaluación del Desempeño</li><li class="text-[#12B0F4]">Diagnóstico de Clima Laboral y Organizacional</li></ul>' ,
+    '<p>Fortalece los procesos internos de tu organización con nuestras evaluaciones y diagnóstico. </p><br /> <ul class="w-full"><li class="text-[#12B0F4]">Assessment Center</li><li class="text-[#12B0F4] font-bold">Evaluación de Competencias Psicometría y Proyectiva</li><li class="text-[#12B0F4]">Evaluación del Desempeño</li><li class="text-[#12B0F4]">Diagnóstico de Clima Laboral y Organizacional</li></ul>' ,
   showCloseButton: true,
   showCancelButton: false,
   focusConfirm: true,
