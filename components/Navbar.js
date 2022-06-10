@@ -112,11 +112,11 @@ const Navbar = ({ toggle }) => {
                     </Menu.Item>
               </Menu.Items>
             </Transition>
-            <Link href="/alianzas">
+            {/* <Link href="/alianzas">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont">
                 ALIANZAS
               </a>
-            </Link>
+            </Link> */}
             {/* <Link href="/bolsa-de-trabajo">
               <a className="mr-5 text-sm hover:text-brink-pink-600 font-mont whitespace-nowrap">
                 BOLSA DE TRABAJO

@@ -62,15 +62,11 @@ export default function Home() {
             </a>
           </section>
         </div>
-        <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm pt-24">
-          <div className="w-full md:w-1/2 overflow-hidden self-end -m-10">
-            <Image
-              src="/img/home/lihuba-home.png"
-              width={600}
-              height={600}
-              className="absolute origin-bottom-left left-[300px] top-[400px]"
-              alt=""
-            />
+        <section className="bg-white h-auto p-8 flex flex-col md:flex-row font-comm">
+          <div className="w-full md:w-1/2 overflow-hidden flex justify-center">
+          <div className="justify-center align-center w-4/5">
+            <img src="/img/bienvenidos.png" alt="logo" className="rounded-lg"/>
+          </div>
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
             <h2 className="text-3xl text-[#EA5076] font-regular mb-4 self-start">
